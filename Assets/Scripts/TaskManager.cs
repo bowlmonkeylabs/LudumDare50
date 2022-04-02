@@ -16,7 +16,7 @@ namespace BML.Scripts
         [SerializeField] private IntReference CurrentQuota;
         [SerializeField] private IntReference BoxesDepositedCount;
         [SerializeField] private IntReference CurrentDay;
-        
+
         [Title("Task Events")]
         [SerializeField] private GameEvent OnGrabBox;
         [SerializeField] private GameEvent OnGrabProductA;
@@ -27,7 +27,7 @@ namespace BML.Scripts
         [SerializeField] private GameEvent OnGrabProductF;
         [SerializeField] private GameEvent OnDepositBox;
         [SerializeField] private GameEvent OnTalkToSupervisor;
-        
+
         [Title("TMP Text References")]
         [SerializeField] private TMP_Text CurrentTaskText;
         [SerializeField] private TMP_Text TimeLeftText;
@@ -39,13 +39,13 @@ namespace BML.Scripts
         [SerializeField] private String GrabProductText = "Grab Product ";
         [SerializeField] private String DepositBoxText = "Deposit the Box";
         [SerializeField] private String TalkToSupervisorText = "Talk to Supervisor";
-        
+
         [Title("Other UI Text")]
         [SerializeField] private String TimeLeftTextPrefix = "Time: ";
         [SerializeField] private String QuotaTextPrefix = "Quota: ";
         [SerializeField] private String BoxesDepositedTextPrefix = "Boxes Deposited: ";
 
-        private Task CurrentTask = Task.GrabBox;
+        private Task CurrentTask = Task.TalkToSupervisor;
         private int numberOfProducts = 6;
         private int currentProductIndex;
 
@@ -87,8 +87,9 @@ namespace BML.Scripts
 
         private void Start()
         {
-            DayTimer.RestartTimer();
-            CurrentTaskText.text = GrabBoxText;
+            DayTimer.ResetTimer();
+            CurrentTask = Task.TalkToSupervisor;
+            CurrentTaskText.text = TalkToSupervisorText;
             QuotaText.text = QuotaTextPrefix + CurrentQuota.Value;
         }
 
@@ -102,30 +103,30 @@ namespace BML.Scripts
         private void GrabBox()
         {
             if (CurrentTask != Task.GrabBox) return;
-            
+
             CurrentTask = Task.GrabProduct;
             SelectNextProduct();
             CurrentTaskText.text = GrabProductText + currentProductIndex;
             Debug.Log("Grabbed Box");
-            
+
         }
 
         private void GrabProduct(int productIndex)
         {
-            if (CurrentTask != Task.GrabProduct || 
+            if (CurrentTask != Task.GrabProduct ||
                 productIndex != currentProductIndex)
                 return;
-            
+
             CurrentTask = Task.DepositBox;
             CurrentTaskText.text = DepositBoxText;
             Debug.Log("Grabbed Product");
-            
+
         }
 
         private void DepositBox()
         {
             if (CurrentTask != Task.DepositBox) return;
-            
+
             CurrentTask = Task.GrabBox;
             CurrentTaskText.text = GrabBoxText;
             BoxesDepositedCount.Value++;
@@ -142,8 +143,23 @@ namespace BML.Scripts
         {
             if (CurrentTask != Task.TalkToSupervisor) return;
 
-            CurrentDay.Value++;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (DayTimer.IsFinished)
+            {
+                //tell player whether they met quota
+                //if not final day, increment day and transition to the next
+                // CurrentDay.Value++;
+                // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //if final day, do camera turn around and set player model to robot model
+            }
+            else
+            {
+                //TODO: tell player what quota for the day is
+                //set task
+                //start timer
+                CurrentTask = Task.GrabBox;
+                CurrentTaskText.text = GrabBoxText;
+                DayTimer.RestartTimer();
+            }
         }
 
         private void SelectNextProduct()
