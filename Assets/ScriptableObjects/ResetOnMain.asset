@@ -16,7 +16,8 @@ MonoBehaviour:
   IncludeSubdirectories: 0
   Description: 
   TriggerVariables: []
-  BoolVariables: []
+  BoolVariables:
+  - {fileID: 11400000, guid: 0f039408322c59140ba4583904068130, type: 2}
   IntVariables:
   - {fileID: 11400000, guid: 9befd861aa7713141938a110d03fa947, type: 2}
   FloatVariables:

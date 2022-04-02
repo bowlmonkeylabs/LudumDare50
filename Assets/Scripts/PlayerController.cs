@@ -10,6 +10,7 @@ namespace BML.Scripts
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private FirstPersonController firstPersonController;
+        [SerializeField] private BoolReference isRoundStarted;
         [SerializeField] private FloatReference currentPissAmount;
         [SerializeField] private FloatReference maxPissAmount;
         [SerializeField] private FloatReference rateOfPissPerSecond;
@@ -41,6 +42,8 @@ namespace BML.Scripts
 
         private void Update()
         {
+            if (!isRoundStarted.Value) return;
+            
             //Handle Piss Meter
             if (!havePissedYourself)
                 currentPissAmount.Value += rateOfPissPerSecond.Value * Time.deltaTime;
@@ -69,7 +72,7 @@ namespace BML.Scripts
 
         private void TryConsumeCaffeine()
         {
-            if (isCaffeinated) return;
+            if (isCaffeinated || !isRoundStarted.Value) return;
 
             isCaffeinated = true;
             caffeineTimer.RestartTimer();

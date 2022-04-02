@@ -17,6 +17,8 @@ namespace BML.Scripts
         [SerializeField] private IntReference BoxesDepositedCount;
         [SerializeField] private IntReference CurrentDay;
         [SerializeField] private FloatReference CurrentPissAmount;
+        [SerializeField] private BoolReference IsRoundStarted;
+        [SerializeField] private string BreakRoomSceneName = "BreakRoom";
 
         
         [Title("Task Events")]
@@ -59,7 +61,8 @@ namespace BML.Scripts
             GrabBox,
             GrabProduct,
             DepositBox,
-            TalkToSupervisor
+            TalkToSupervisorEndGame,
+            TalkToSupervisorStartGame
         }
 
         private void Awake()
@@ -94,8 +97,7 @@ namespace BML.Scripts
 
         private void Start()
         {
-            DayTimer.ResetTimer();
-            CurrentTask = Task.TalkToSupervisor;
+            CurrentTask = Task.TalkToSupervisorStartGame;
             CurrentTaskText.text = TalkToSupervisorText;
             QuotaText.text = QuotaTextPrefix + CurrentQuota.Value;
         }
@@ -143,37 +145,39 @@ namespace BML.Scripts
 
         private void TimerComplete()
         {
-            CurrentTask = Task.TalkToSupervisor;
+            CurrentTask = Task.TalkToSupervisorEndGame;
             CurrentTaskText.text = TalkToSupervisorText;
         }
 
         private void PissYourself()
         {
-            CurrentTask = Task.TalkToSupervisor;
+            CurrentTask = Task.TalkToSupervisorEndGame;
             CurrentTaskText.text = TalkToSupervisorText;
             DayTimer.StopTimer();
         }
 
         private void TalkToSupervisor()
         {
-            if (CurrentTask != Task.TalkToSupervisor) return;
-
-            if (DayTimer.IsFinished)
-            {
-                //tell player whether they met quota
-                //if not final day, increment day and transition to the next
-                // CurrentDay.Value++;
-                // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                //if final day, do camera turn around and set player model to robot model
-            }
-            else
+            if (CurrentTask == Task.TalkToSupervisorStartGame)
             {
                 //TODO: tell player what quota for the day is
                 //set task
                 //start timer
                 CurrentTask = Task.GrabBox;
                 CurrentTaskText.text = GrabBoxText;
+                IsRoundStarted.Value = true;
                 DayTimer.RestartTimer();
+            }
+            
+            else if (CurrentTask == Task.TalkToSupervisorEndGame)
+            {
+                //tell player whether they met quota
+                //if not final day, increment day and transition to the next
+                // CurrentDay.Value++;
+                // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //if final day, do camera turn around and set player model to robot model
+                CurrentDay.Value++;
+                SceneManager.LoadScene(BreakRoomSceneName);
             }
         }
 

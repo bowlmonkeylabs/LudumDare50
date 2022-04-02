@@ -468,6 +468,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstPersonController: {fileID: 4443552111781188187}
+  isRoundStarted:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 0f039408322c59140ba4583904068130, type: 2}
   currentPissAmount:
     UseConstant: 0
     EnableInstanceOptions: 0
