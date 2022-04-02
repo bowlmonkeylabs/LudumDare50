@@ -1,12 +1,57 @@
-﻿using UnityEngine;
+﻿using System;
+using BML.ScriptableObjectCore.Scripts.Events;
+using BML.ScriptableObjectCore.Scripts.Variables;
+using StarterAssets;
+using TMPro;
+using UnityEngine;
 
 namespace BML.Scripts
 {
     public class PlayerController : MonoBehaviour
     {
+        [SerializeField] private FirstPersonController firstPersonController;
+        [SerializeField] private FloatReference currentPissAmount;
+        [SerializeField] private FloatReference maxPissAmount;
+        [SerializeField] private FloatReference rateOfPissPerSecond;
+        [SerializeField] private FloatReference caffeineSpeedMult;
+        [SerializeField] private FloatReference caffeineIncreasePissAmount;
+        [SerializeField] private TimerReference caffeineTimer;
         [SerializeField] private LayerMask interactMask;
         [SerializeField] private Transform mainCamera;
         [SerializeField] private float interactDistance = 10f;
+        [SerializeField] private GameEvent onPissYourself;
+        [SerializeField] private GameEvent onConsumeCaffeine;
+
+        private bool havePissedYourself;
+        private bool isCaffeinated;
+        private float originalMoveSpeed;
+
+        private void Awake()
+        {
+            onConsumeCaffeine.Subscribe(TryConsumeCaffeine);
+            caffeineTimer.SubscribeFinished(DisableCaffeine);
+            originalMoveSpeed = firstPersonController.MoveSpeed;
+        }
+        
+        private void OnDisable()
+        {
+            onConsumeCaffeine.Unsubscribe(TryConsumeCaffeine);
+            caffeineTimer.UnsubscribeFinished(DisableCaffeine);
+        }
+
+        private void Update()
+        {
+            //Handle Piss Meter
+            if (!havePissedYourself)
+                currentPissAmount.Value += rateOfPissPerSecond.Value * Time.deltaTime;
+            
+            if (!havePissedYourself && currentPissAmount.Value > maxPissAmount.Value)
+            {
+                onPissYourself.Raise();
+                havePissedYourself = true;
+                currentPissAmount.Value = maxPissAmount.Value;
+            }
+        }
 
         public void OnInteract()
         {
@@ -20,6 +65,22 @@ namespace BML.Scripts
                 
                 interactionReceiver.ReceiveInteraction();
             }
+        }
+
+        private void TryConsumeCaffeine()
+        {
+            if (isCaffeinated) return;
+
+            isCaffeinated = true;
+            caffeineTimer.RestartTimer();
+            firstPersonController.MoveSpeed = originalMoveSpeed * caffeineSpeedMult.Value;
+            currentPissAmount.Value += caffeineIncreasePissAmount.Value;
+        }
+
+        private void DisableCaffeine()
+        {
+            firstPersonController.MoveSpeed = originalMoveSpeed;
+            isCaffeinated = false;
         }
     }
 }

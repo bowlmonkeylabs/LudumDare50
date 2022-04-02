@@ -16,7 +16,9 @@ namespace BML.Scripts
         [SerializeField] private IntReference CurrentQuota;
         [SerializeField] private IntReference BoxesDepositedCount;
         [SerializeField] private IntReference CurrentDay;
+        [SerializeField] private FloatReference CurrentPissAmount;
 
+        
         [Title("Task Events")]
         [SerializeField] private GameEvent OnGrabBox;
         [SerializeField] private GameEvent OnGrabProductA;
@@ -27,25 +29,28 @@ namespace BML.Scripts
         [SerializeField] private GameEvent OnGrabProductF;
         [SerializeField] private GameEvent OnDepositBox;
         [SerializeField] private GameEvent OnTalkToSupervisor;
-
+        [SerializeField] private GameEvent OnPissYourself;
+        
         [Title("TMP Text References")]
         [SerializeField] private TMP_Text CurrentTaskText;
         [SerializeField] private TMP_Text TimeLeftText;
         [SerializeField] private TMP_Text QuotaText;
         [SerializeField] private TMP_Text BoxesDepositedText;
+        [SerializeField] private TMP_Text PissAmountText;
 
         [Title("Task Text")]
         [SerializeField] private String GrabBoxText = "Grab a Box";
         [SerializeField] private String GrabProductText = "Grab Product ";
         [SerializeField] private String DepositBoxText = "Deposit the Box";
         [SerializeField] private String TalkToSupervisorText = "Talk to Supervisor";
-
+        
         [Title("Other UI Text")]
         [SerializeField] private String TimeLeftTextPrefix = "Time: ";
         [SerializeField] private String QuotaTextPrefix = "Quota: ";
         [SerializeField] private String BoxesDepositedTextPrefix = "Boxes Deposited: ";
+        [SerializeField] private String PissAmountPrefix = "Piss Amount: ";
 
-        private Task CurrentTask = Task.TalkToSupervisor;
+        private Task CurrentTask = Task.GrabBox;
         private int numberOfProducts = 6;
         private int currentProductIndex;
 
@@ -68,6 +73,7 @@ namespace BML.Scripts
             OnGrabProductF.Subscribe(() => GrabProduct(5));
             OnDepositBox.Subscribe(DepositBox);
             DayTimer.SubscribeFinished(TimerComplete);
+            OnPissYourself.Subscribe(PissYourself);
             OnTalkToSupervisor.Subscribe(TalkToSupervisor);
         }
 
@@ -82,6 +88,7 @@ namespace BML.Scripts
             OnGrabProductF.Unsubscribe(() => GrabProduct(5));
             OnDepositBox.Unsubscribe(DepositBox);
             DayTimer.UnsubscribeFinished(TimerComplete);
+            OnPissYourself.Unsubscribe(PissYourself);
             OnTalkToSupervisor.Unsubscribe(TalkToSupervisor);
         }
 
@@ -98,35 +105,36 @@ namespace BML.Scripts
             DayTimer.UpdateTime();
             TimeLeftText.text = TimeLeftTextPrefix + Mathf.CeilToInt(DayTimer.RemainingTime ?? 0);
             BoxesDepositedText.text = BoxesDepositedTextPrefix + BoxesDepositedCount.Value;
+            PissAmountText.text = PissAmountPrefix + Mathf.Floor(CurrentPissAmount.Value);
         }
 
         private void GrabBox()
         {
             if (CurrentTask != Task.GrabBox) return;
-
+            
             CurrentTask = Task.GrabProduct;
             SelectNextProduct();
             CurrentTaskText.text = GrabProductText + currentProductIndex;
             Debug.Log("Grabbed Box");
-
+            
         }
 
         private void GrabProduct(int productIndex)
         {
-            if (CurrentTask != Task.GrabProduct ||
+            if (CurrentTask != Task.GrabProduct || 
                 productIndex != currentProductIndex)
                 return;
-
+            
             CurrentTask = Task.DepositBox;
             CurrentTaskText.text = DepositBoxText;
             Debug.Log("Grabbed Product");
-
+            
         }
 
         private void DepositBox()
         {
             if (CurrentTask != Task.DepositBox) return;
-
+            
             CurrentTask = Task.GrabBox;
             CurrentTaskText.text = GrabBoxText;
             BoxesDepositedCount.Value++;
@@ -137,6 +145,13 @@ namespace BML.Scripts
         {
             CurrentTask = Task.TalkToSupervisor;
             CurrentTaskText.text = TalkToSupervisorText;
+        }
+
+        private void PissYourself()
+        {
+            CurrentTask = Task.TalkToSupervisor;
+            CurrentTaskText.text = TalkToSupervisorText;
+            DayTimer.StopTimer();
         }
 
         private void TalkToSupervisor()

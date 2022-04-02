@@ -467,11 +467,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4dbdca899f4a778adaf90e99d8e159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstPersonController: {fileID: 4443552111781188187}
+  currentPissAmount:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 4b26a7fbc87e7914ba00d19f2dda5157, type: 2}
+  maxPissAmount:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 1b660a87ab727464da98e98391dd07bb, type: 2}
+  rateOfPissPerSecond:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 964798d2bc153f04eb610c56e8dcb46a, type: 2}
+  caffeineSpeedMult:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 4864e6dd16f30aa48abc54f9a321a851, type: 2}
+  caffeineIncreasePissAmount:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 02930e234e3831640881d99b9f024e8c, type: 2}
+  caffeineTimer:
+    UseConstant: 0
+    ConstantDuration: 0
+    Variable: {fileID: 11400000, guid: 570c752c309212a48a6d70ed45ed21e7, type: 2}
   interactMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 65
   mainCamera: {fileID: 8990894633311890267}
   interactDistance: 10
+  onPissYourself: {fileID: 11400000, guid: c1b2c344986a56e479e5216fb4254828, type: 2}
+  onConsumeCaffeine: {fileID: 11400000, guid: 1a31693f858c73249b1cf3e6a11699cc, type: 2}
 --- !u!1001 &7332487764060689678
 PrefabInstance:
   m_ObjectHideFlags: 0
