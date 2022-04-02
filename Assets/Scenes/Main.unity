@@ -1471,6 +1471,8 @@ MonoBehaviour:
     InstancePath: IntermediateProperties
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 0f039408322c59140ba4583904068130, type: 2}
+  BreakRoomSceneName: BreakRoom
+  QuotaCurve: {fileID: 11400000, guid: 9d52d52d876f02a4b9df59623d1fa261, type: 2}
   OnGrabBox: {fileID: 11400000, guid: e9ba3f18ad51f184280dc12e239f2f98, type: 2}
   OnGrabProductA: {fileID: 11400000, guid: dee0f95b71cadf840a88e060c8d2c846, type: 2}
   OnGrabProductB: {fileID: 11400000, guid: abcba70bce3ec604e908af1a08e41315, type: 2}

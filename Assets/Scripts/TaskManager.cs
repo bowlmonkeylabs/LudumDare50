@@ -19,8 +19,8 @@ namespace BML.Scripts
         [SerializeField] private FloatReference CurrentPissAmount;
         [SerializeField] private BoolReference IsRoundStarted;
         [SerializeField] private string BreakRoomSceneName = "BreakRoom";
+        [SerializeField] private CurveVariable QuotaCurve;
 
-        
         [Title("Task Events")]
         [SerializeField] private GameEvent OnGrabBox;
         [SerializeField] private GameEvent OnGrabProductA;
@@ -99,6 +99,7 @@ namespace BML.Scripts
         {
             CurrentTask = Task.TalkToSupervisorStartGame;
             CurrentTaskText.text = TalkToSupervisorText;
+            CurrentQuota.Value = Mathf.FloorToInt(QuotaCurve.Value.Evaluate(CurrentDay.Value));
             QuotaText.text = QuotaTextPrefix + CurrentQuota.Value;
         }
 
