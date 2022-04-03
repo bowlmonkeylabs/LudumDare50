@@ -106,7 +106,7 @@ namespace BML.Scripts
         private void Start()
         {
             CurrentTask = Task.TalkToSupervisorStartGame;
-            CurrentTaskText.text = TalkToSupervisorText;
+            TaskPromptManager.SetPrompt(CurrentTask);
             CurrentQuota.Value = Mathf.FloorToInt(QuotaCurve.Value.Evaluate(CurrentDay.Value));
             QuotaText.text = QuotaTextPrefix + CurrentQuota.Value;
         }
@@ -126,7 +126,6 @@ namespace BML.Scripts
             CurrentTask = SelectNextProduct();
             TaskPromptManager.SetPrompt(CurrentTask);
             Debug.Log("Grabbed Box");
-            
         }
 
         private void HandleGrabProductA() => GrabProduct(Task.GrabProductA);
@@ -142,7 +141,7 @@ namespace BML.Scripts
                 return;
             
             CurrentTask = Task.DepositBox;
-            CurrentTaskText.text = DepositBoxText;
+            TaskPromptManager.SetPrompt(CurrentTask);
             
             Debug.Log("Grabbed Product");
         }
@@ -152,7 +151,7 @@ namespace BML.Scripts
             if (CurrentTask != Task.DepositBox) return;
             
             CurrentTask = Task.GrabBox;
-            CurrentTaskText.text = GrabBoxText;
+            TaskPromptManager.SetPrompt(CurrentTask);
             BoxesDepositedCount.Value++;
             Debug.Log($"Deposited Box #{BoxesDepositedCount.Value}");
         }
@@ -160,13 +159,13 @@ namespace BML.Scripts
         private void TimerComplete()
         {
             CurrentTask = Task.TalkToSupervisorEndGame;
-            CurrentTaskText.text = TalkToSupervisorText;
+            TaskPromptManager.SetPrompt(CurrentTask);
         }
 
         private void PissYourself()
         {
             CurrentTask = Task.TalkToSupervisorEndGame;
-            CurrentTaskText.text = TalkToSupervisorText;
+            TaskPromptManager.SetPrompt(CurrentTask);
             DayTimer.StopTimer();
         }
 
@@ -178,7 +177,7 @@ namespace BML.Scripts
                 //set task
                 //start timer
                 CurrentTask = Task.GrabBox;
-                CurrentTaskText.text = GrabBoxText;
+                TaskPromptManager.SetPrompt(CurrentTask);
                 IsRoundStarted.Value = true;
                 DayTimer.RestartTimer();
             }
@@ -198,7 +197,9 @@ namespace BML.Scripts
         private Task SelectNextProduct()
         {
             int randomProduct = Random.Range((int) Task.GrabProductA, (int) Task.GrabProductF + 1);
-            return (Task) Enum.ToObject(typeof(Task), randomProduct);
+            TaskManager.Task randomProductTask = (Task) Enum.ToObject(typeof(Task), randomProduct);
+            Debug.Log($"{randomProduct} | {randomProductTask}");
+            return randomProductTask;
         }
     }
 }

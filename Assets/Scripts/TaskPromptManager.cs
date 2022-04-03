@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -7,23 +8,23 @@ namespace BML.Scripts
 {
     public class TaskPromptManager : SerializedMonoBehaviour
     {
-        [SerializeField] private Dictionary<TaskManager.Task, GameObject> uiObjects;
+        [SerializeField] private List<(TaskManager.Task, GameObject)> uiObjects;
 
-        private RectTransform[] children;
-        
+        private Dictionary<TaskManager.Task, GameObject> uiObjectsMap;
+
         private void Awake()
         {
-            children = this.transform.GetComponentsInChildren<RectTransform>();
+            uiObjectsMap = uiObjects.ToDictionary(tuple => tuple.Item1, tuple => tuple.Item2);
         }
 
         public void SetPrompt(TaskManager.Task task)
         {
-            foreach (var uiObject in uiObjects.Values)
+            foreach (var uiObject in uiObjectsMap.Values)
             {
                 uiObject.SetActive(false);
             }
-
-            uiObjects[task].SetActive(true);
+            
+            uiObjectsMap[task].SetActive(true);
         }
         
     }

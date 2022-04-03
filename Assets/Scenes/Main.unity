@@ -279,6 +279,140 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[0]
+      value: '"path":"uiObjects.[0]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":0,"Item2":$eref:0}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[1]
+      value: '"path":"uiObjects.[0].Item2","value":$eref:0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[2]
+      value: '"path":"uiObjects.[1]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":1,"Item2":$eref:1}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[3]
+      value: '"path":"uiObjects.[1].Item2","value":$eref:1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[4]
+      value: '"path":"uiObjects.[2]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":2,"Item2":$eref:2}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[5]
+      value: '"path":"uiObjects.[2].Item2","value":$eref:2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[6]
+      value: '"path":"uiObjects.[3]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":3,"Item2":$eref:3}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[7]
+      value: '"path":"uiObjects.[3].Item2","value":$eref:3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[8]
+      value: '"path":"uiObjects.[4]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":4,"Item2":$eref:4}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[9]
+      value: '"path":"uiObjects.[4].Item2","value":$eref:4'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[10]
+      value: '"path":"uiObjects.[5]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":5,"Item2":$eref:5}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[11]
+      value: '"path":"uiObjects.[5].Item2","value":$eref:5'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[12]
+      value: '"path":"uiObjects.[6]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":6,"Item2":$eref:6}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[13]
+      value: '"path":"uiObjects.[6].Item2","value":$eref:6'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[14]
+      value: '"path":"uiObjects.[7]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":7,"Item2":$eref:7}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[15]
+      value: '"path":"uiObjects.[7].Item2","value":$eref:7'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[16]
+      value: '"path":"uiObjects.[8]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":8,"Item2":$eref:8}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[17]
+      value: '"path":"uiObjects.[8].Item2","value":$eref:8'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[18]
+      value: '"path":"uiObjects.[9]","value":{"$id":0,"$type":"System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib","Item1":9,"Item2":$eref:8}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[19]
+      value: '"path":"uiObjects.[9].Item2","value":$eref:8'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 67471777}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1457641783}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 649122803}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 110639222}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 1640041199}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 1256390295}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 895599643}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 67471776}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 67471778}
     - target: {fileID: 5517124511574351644, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -489,6 +623,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &67471776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1808464837654379682, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &67471777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2182470451314600411, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &67471778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6791021064244218829, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &89876900
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +713,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &110639222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2294371374037863666, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &153456533
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +814,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &226715094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220efac7f2df49f5baca565fe91ea4b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &296210716
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +968,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18884
+  m_Name: pb_Mesh91430
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -967,7 +1132,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18898
+  m_Name: pb_Mesh91428
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1255,7 +1420,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18830
+  m_Name: pb_Mesh-255944
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1474,13 +1639,18 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!1 &649122803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2294371374292298119, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &711125759
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18926
+  m_Name: pb_Mesh91424
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1768,7 +1938,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18968
+  m_Name: pb_Mesh91414
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2056,7 +2226,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18870
+  m_Name: pb_Mesh91432
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2220,7 +2390,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18954
+  m_Name: pb_Mesh91416
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2502,13 +2672,18 @@ Transform:
   m_Father: {fileID: 296210717}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &895599643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2294371373224629334, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &900414051
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18912
+  m_Name: pb_Mesh91426
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2755,7 +2930,7 @@ MonoBehaviour:
   GrabProductText: Grab  Product
   DepositBoxText: Deposit the Box
   TalkToSupervisorText: Talk to Supervisor
-  TaskPromptManager: {fileID: 0}
+  TaskPromptManager: {fileID: 226715094}
   TimeLeftTextPrefix: 'Time: '
   QuotaTextPrefix: 'Quota: '
   BoxesDepositedTextPrefix: 'Boxes Deposited: '
@@ -2831,6 +3006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 231e5213f6c909046b43cd74b8789fbb, type: 3}
+--- !u!1 &1256390295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2294371374243120155, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259543209
 GameObject:
   m_ObjectHideFlags: 0
@@ -3192,13 +3372,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1457641783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5517124512195052973, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1607600034
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18818
+  m_Name: pb_Mesh-255932
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3356,13 +3541,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1640041199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2294371373308765157, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1800995283
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18940
+  m_Name: pb_Mesh91422
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3774,7 +3964,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18842
+  m_Name: pb_Mesh-255956
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
