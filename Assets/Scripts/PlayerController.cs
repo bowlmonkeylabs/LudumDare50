@@ -12,6 +12,7 @@ namespace BML.Scripts
         [SerializeField] private FirstPersonController firstPersonController;
         [SerializeField] private BoolReference isRoundStarted;
         [SerializeField] private BoolReference IsConversationActive;
+        [SerializeField] private BoolReference IsHoverTextOpen;
         [SerializeField] private FloatReference currentPissAmount;
         [SerializeField] private FloatReference maxPissAmount;
         [SerializeField] private FloatReference rateOfPissPerSecond;
@@ -93,15 +94,18 @@ namespace BML.Scripts
                 HoverReceiver hoverReceiver = hit.collider.GetComponent<HoverReceiver>();
                 if (hoverReceiver == null)
                 {
-                    onUnHover.Raise();
+                    // if (IsHoverTextOpen.Value)
+                    // {
+                    //     onUnHover.Raise();
+                    // }
                     return;
                 }
 
-                hoverReceiver.ReceiveHover();
+                // hoverReceiver.ReceiveHover();
             }
-            else
+            else if (IsHoverTextOpen.Value)
             {
-                onUnHover.Raise();
+                // onUnHover.Raise();
             }
         }
 

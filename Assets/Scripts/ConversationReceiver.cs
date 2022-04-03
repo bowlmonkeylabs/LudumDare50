@@ -17,6 +17,10 @@ namespace BML.Scripts
         [SerializeField] private TMP_Text SpeakerText;
         [SerializeField] private BoolReference IsConversationActive;
 
+        [Header("Token Values")]
+        [SerializeField] private IntReference CurrentQuota;
+        [SerializeField] private IntReference BoxesDepositedCount;
+
         private UnityEvent currentOnFinishDialogueEvent;
         public void OnEnable()
         {
@@ -32,23 +36,25 @@ namespace BML.Scripts
 
         private void ReceiveConversation(System.Object prevDialogueInfo, System.Object nextDialogueInfo)
         {
-            DialogueInfo dialogueInfo = (DialogueInfo) nextDialogueInfo;
+            DialogueInfo dialogueInfo = (DialogueInfo)nextDialogueInfo;
 
             currentOnFinishDialogueEvent = dialogueInfo.OnDialogueFinished;
             handler.dialogue = dialogueInfo.Dialogue;
             handler.SetConversation(dialogueInfo.ConversationName);
             UpdateDialogueText();
+            DialogueText.gameObject.SetActive(true);
+            SpeakerText.gameObject.SetActive(true);
             IsConversationActive.Value = true;
         }
 
         private void AttemptContinueDialogue()
         {
             if (!IsConversationActive.Value) return;
-            
+
             int choice = -1;
             handler.NextMessage(choice);
             UpdateDialogueText();
-            
+
             // End if there is no next message
             if (handler.currentMessageInfo.ID < 0)
             {
@@ -60,6 +66,8 @@ namespace BML.Scripts
         {
             OnDialogueFinished.Raise();
             currentOnFinishDialogueEvent.Invoke();
+            DialogueText.gameObject.SetActive(false);
+            SpeakerText.gameObject.SetActive(false);
             IsConversationActive.Value = false;
         }
 
@@ -69,9 +77,18 @@ namespace BML.Scripts
             if (handler.currentMessageInfo.Type == QD_NodeType.Message)
             {
                 QD_Message message = handler.GetMessage();
-                DialogueText.text = message.MessageText;
+                DialogueText.text = replaceTokens(message);
                 SpeakerText.text = message.SpeakerName;
             }
+        }
+
+        private string replaceTokens(QD_Message message)
+        {
+            var messageText = message.MessageText;
+            messageText = messageText.Replace("{{current_quota}}", "" + CurrentQuota.Value);
+            messageText = messageText.Replace("{{boxes_deposited}}", "" + BoxesDepositedCount.Value);
+
+            return messageText;
         }
     }
 }

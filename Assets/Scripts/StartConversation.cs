@@ -12,7 +12,7 @@ namespace BML.Scripts
         public string ConversationName;
         public UnityEvent OnDialogueFinished;
     }
-    
+
     public class StartConversation : MonoBehaviour
     {
         [SerializeField] private DynamicGameEvent OnStartConversation;
@@ -20,7 +20,7 @@ namespace BML.Scripts
         [SerializeField] private string ConversationName = "Meet with Bob";
         [SerializeField] private IntReference CurrentDay;
         [SerializeField] private bool AppendDayIndex;
-        
+
         public UnityEvent OnDialogueFinished;
 
         public void StartDialogue()
@@ -31,7 +31,7 @@ namespace BML.Scripts
                 ConversationName = ConversationName,
                 OnDialogueFinished = OnDialogueFinished
             };
-            
+
             if (AppendDayIndex) dialogueInfo.ConversationName += CurrentDay.Value;
             OnStartConversation.Raise(dialogueInfo);
         }
