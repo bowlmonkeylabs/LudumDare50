@@ -226,7 +226,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh57774
+  m_Name: pb_Mesh97646
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -390,7 +390,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh57772
+  m_Name: pb_Mesh97644
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -681,7 +681,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-61512
+  m_Name: pb_Mesh-304828
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -906,7 +906,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh57768
+  m_Name: pb_Mesh97640
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1163,7 +1163,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh57758
+  m_Name: pb_Mesh97630
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1338,7 +1338,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh57776
+  m_Name: pb_Mesh97648
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1502,7 +1502,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh57760
+  m_Name: pb_Mesh97632
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1666,7 +1666,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh57770
+  m_Name: pb_Mesh97642
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2568,7 +2568,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-61500
+  m_Name: pb_Mesh-304816
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2732,7 +2732,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh57766
+  m_Name: pb_Mesh97638
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2896,7 +2896,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-61524
+  m_Name: pb_Mesh-304840
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3418,58 +3418,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warehouse
       objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 3219400080861996799}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: bd2f9071cac0917418e5e1de6951ca0c, type: 2}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartDialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Raise
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BML.Scripts.StartConversation, BML.Scripts
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: BML.ScriptableObjectCore.Scripts.Events.GameEvent, ScriptableObjectSystem
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219400082012833597, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 3219400082585229976, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -3508,370 +3456,6 @@ PrefabInstance:
       objectReference: {fileID: 475736367}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
---- !u!1 &3219400080861996773 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400082166204110, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3219400080861996774 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400082898094501, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3219400080861996775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Use Caffeine Dispenser
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!114 &3219400080861996776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Use Caffeine Dispenser
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!1 &3219400080861996777 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400081136944792, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3219400080861996778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Use Bathroom
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!1 &3219400080861996779 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400080877625299, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3219400080861996780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Use Bathroom
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!1 &3219400080861996781 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400081320543128, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3219400080861996782 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400081657508505, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3219400080861996783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Conveyor
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!114 &3219400080861996784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Product F
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!1 &3219400080861996785 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400080993966422, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3219400080861996786 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400081456380175, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3219400080861996787 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400081656875872, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3219400080861996788 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400082585229970, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3219400080861996789 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400080947337894, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3219400080861996790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400080941193226, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3219400080861996791 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3219400082012833584, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
-  m_PrefabInstance: {fileID: 3219400080861996772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3219400080861996792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Product E
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!114 &3219400080861996793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Product D
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!114 &3219400080861996794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Product C
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!114 &3219400080861996795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Product B
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!114 &3219400080861996796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: '{I} '
-    InstancePath: IntermediateProperties
-    ConstantValue: Product A
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!114 &3219400080861996797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Box Supply
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!114 &3219400080861996798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: Supervisor
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
---- !u!114 &3219400080861996799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219400080861996791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0c183d2d18940bebf492e3292fbddec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnStartConversation: {fileID: 11400000, guid: e1532a5f81f3fff46a1d819dedc145e1, type: 2}
-  Dialogue: {fileID: 11400000, guid: 9782331ce3b667443a0968f79372098b, type: 2}
-  ConversationName: StartDay
-  CurrentDay:
-    UseConstant: 0
-    EnableInstanceOptions: 0
-    InstanceName: 
-    InstancePath: IntermediateProperties
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 87ab714844c4fba4fb305623e949d41b, type: 2}
-  AppendDayIndex: 0
-  OnDialogueFinished:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: bd2f9071cac0917418e5e1de6951ca0c, type: 2}
-        m_TargetAssemblyTypeName: BML.ScriptableObjectCore.Scripts.Events.GameEvent,
-          ScriptableObjectSystem
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &7808075647538220423 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 215824781091338202, guid: 1dd618bef86eff94da96dd2aed3a9900, type: 3}

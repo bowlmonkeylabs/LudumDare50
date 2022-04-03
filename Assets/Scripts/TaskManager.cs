@@ -57,6 +57,7 @@ namespace BML.Scripts
         private Task CurrentTask = Task.GrabBox;
         private int numberOfProducts = 6;
         private int currentProductIndex;
+        private bool isTimeLow;
 
         public enum Task
         {
