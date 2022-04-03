@@ -16,6 +16,12 @@ public class HoverTextDisplay : MonoBehaviour
         onShowHoverText.Subscribe(OnShowHoverText);
     }
 
+    private void OnDisable()
+    {
+        onUnHover.Unsubscribe(OnUnHover);
+        onShowHoverText.Unsubscribe(OnShowHoverText);
+    }
+
     public void OnShowHoverText(object text, object prevText)
     {
         hoverTextDisplay.text = (string)text;

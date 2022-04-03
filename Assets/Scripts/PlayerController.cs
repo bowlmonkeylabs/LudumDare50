@@ -94,14 +94,14 @@ namespace BML.Scripts
                 HoverReceiver hoverReceiver = hit.collider.GetComponent<HoverReceiver>();
                 if (hoverReceiver == null)
                 {
-                    // if (IsHoverTextOpen.Value)
-                    // {
-                    //     onUnHover.Raise();
-                    // }
+                    if (IsHoverTextOpen.Value)
+                    {
+                        // onUnHover.Raise();
+                    }
                     return;
                 }
 
-                // hoverReceiver.ReceiveHover();
+                // if (!IsHoverTextOpen.Value) hoverReceiver.ReceiveHover();
             }
             else if (IsHoverTextOpen.Value)
             {
