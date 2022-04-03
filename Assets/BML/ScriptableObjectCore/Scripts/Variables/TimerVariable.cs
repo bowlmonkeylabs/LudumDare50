@@ -49,6 +49,7 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
             isStopped = true;
             isFinished = false;
             startTime = Time.time;
+            remainingTime = Duration;
         }
 
         public void StopTimer()

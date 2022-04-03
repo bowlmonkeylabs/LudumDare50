@@ -20,6 +20,7 @@ namespace BML.Scripts
         [SerializeField] private FloatReference caffeineSpeedMult;
         [SerializeField] private FloatReference caffeineIncreasePissAmount;
         [SerializeField] private TimerReference caffeineTimer;
+        [SerializeField] private TimerReference DayTimer;
         [SerializeField] private LayerMask interactMask;
         [SerializeField] private Transform mainCamera;
         [SerializeField] private float interactDistance = 10f;
@@ -38,6 +39,8 @@ namespace BML.Scripts
             onConsumeCaffeine.Subscribe(TryConsumeCaffeine);
             caffeineTimer.SubscribeFinished(DisableCaffeine);
             originalMoveSpeed = firstPersonController.MoveSpeed;
+            currentPissAmount.Value = 0f;
+            isCaffeinated = false;
         }
 
         private void OnDisable()
@@ -51,7 +54,7 @@ namespace BML.Scripts
             // CheckHover();
             caffeineTimer.UpdateTime();
 
-            if (isRoundStarted.Value)
+            if (isRoundStarted.Value && !DayTimer.IsFinished)
             {
                 //Handle Piss Meter
                 if (!havePissedYourself)

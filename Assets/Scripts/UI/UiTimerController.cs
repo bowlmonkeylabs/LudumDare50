@@ -17,6 +17,10 @@ namespace BML.Scripts
         private void Awake()
         {
             timer.Subscribe(UpdateFill);
+        }
+
+        private void Start()
+        {
             UpdateFill();
         }
 

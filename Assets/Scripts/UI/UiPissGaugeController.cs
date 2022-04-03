@@ -19,6 +19,10 @@ namespace BML.Scripts
         {
             valueCurrent.Subscribe(UpdateFill);
             valueMax.Subscribe(UpdateFill);
+        }
+
+        private void Start()
+        {
             UpdateFill();
         }
 

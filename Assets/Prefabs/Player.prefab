@@ -714,6 +714,10 @@ MonoBehaviour:
     UseConstant: 0
     ConstantDuration: 0
     Variable: {fileID: 11400000, guid: 570c752c309212a48a6d70ed45ed21e7, type: 2}
+  DayTimer:
+    UseConstant: 0
+    ConstantDuration: 0
+    Variable: {fileID: 11400000, guid: ef1d515a2d724494d9419d52cc0f2e5b, type: 2}
   interactMask:
     serializedVersion: 2
     m_Bits: 65

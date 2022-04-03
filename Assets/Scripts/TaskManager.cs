@@ -81,6 +81,7 @@ namespace BML.Scripts
             DayTimer.SubscribeFinished(TimerComplete);
             OnPissYourself.Subscribe(PissYourself);
             OnTalkToSupervisor.Subscribe(TalkToSupervisor);
+            DayTimer.ResetTimer();
         }
 
         private void OnDisable()
@@ -104,6 +105,7 @@ namespace BML.Scripts
             TaskPromptManager.SetPrompt(CurrentTask);
             CurrentQuota.Value = Mathf.FloorToInt(QuotaCurve.Value.Evaluate(CurrentDay.Value));
             QuotaText.text = QuotaTextPrefix + CurrentQuota.Value;
+            BoxesDepositedCount.Value = 0;
         }
 
         private void Update()
