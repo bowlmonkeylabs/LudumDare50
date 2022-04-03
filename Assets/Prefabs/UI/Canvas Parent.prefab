@@ -872,16 +872,16 @@ MonoBehaviour:
   fillImage: {fileID: 7035017333571284309}
   fillColor:
     serializedVersion: 2
-    key0: {r: 0.83, g: 0.29934427, b: 0.18595628, a: 1}
+    key0: {r: 0.8584906, g: 0.8305729, b: 0.2956123, a: 1}
     key1: {r: 0.745283, g: 0.6846781, b: 0.14413491, a: 1}
-    key2: {r: 0.8584906, g: 0.8305729, b: 0.2956123, a: 0}
+    key2: {r: 0.83, g: 0.29934427, b: 0.18595628, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 6554
-    ctime1: 19661
+    ctime0: 45875
+    ctime1: 58982
     ctime2: 65535
     ctime3: 0
     ctime4: 0
