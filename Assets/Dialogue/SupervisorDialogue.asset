@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Conversations:
   - ID: 5
-    Name: StartDay
+    Name: DayRoundStart
     FirstMessage: 7
+  - ID: 8
+    Name: DayRoundEnd
+    FirstMessage: 9
   Speakers:
   - ID: 6
     Name: Supervisor
@@ -26,9 +29,15 @@ MonoBehaviour:
     SpeakerName: Supervisor
     PreviousMessage: -1
     NextMessage: -1
-    MessageText: 'Your quota for the day is: {{current_quota}}.
+    MessageText: 'Your quota for the day is: {{current_quota}}'
+    Clip: {fileID: 0}
+  - ID: 9
+    Speaker: 6
+    SpeakerName: Supervisor
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: 'Your quota for the day was: {{current_quota}}
 
-      You currently
-      have: {{boxes_deposited}}'
+      You got {{boxes_deposited}}'
     Clip: {fileID: 0}
   Choices: []

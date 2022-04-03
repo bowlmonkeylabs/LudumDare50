@@ -19,7 +19,9 @@ namespace BML.Scripts
         [SerializeField] private QD_Dialogue Dialogue;
         [SerializeField] private string ConversationName = "Meet with Bob";
         [SerializeField] private IntReference CurrentDay;
+        [SerializeField] private BoolReference IsRoundStarted;
         [SerializeField] private bool AppendDayIndex;
+        [SerializeField] private bool AppendRoundStarted;
 
         public UnityEvent OnDialogueFinished;
 
@@ -33,6 +35,7 @@ namespace BML.Scripts
             };
 
             if (AppendDayIndex) dialogueInfo.ConversationName += CurrentDay.Value;
+            if (AppendRoundStarted) dialogueInfo.ConversationName += (!IsRoundStarted.Value ? "RoundStart" : "RoundEnd");
             OnStartConversation.Raise(dialogueInfo);
         }
     }

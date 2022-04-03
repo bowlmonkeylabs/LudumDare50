@@ -12,7 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc788fe28a1947c5906bf24c0472406, type: 3}
   m_Name: RickDialogue
   m_EditorClassIdentifier: 
-  Conversations: []
-  Speakers: []
-  Messages: []
+  Conversations:
+  - ID: 6
+    Name: Day1
+    FirstMessage: 7
+  Speakers:
+  - ID: 5
+    Name: Rick
+    Icon: {fileID: 0}
+  Messages:
+  - ID: 7
+    Speaker: 5
+    SpeakerName: Rick
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Hey there, I'm Rick, welcome to Ymazon. I know you've heard things
+      about this place, but don't worry about it. I've never met quota and nothings
+      ever happened to me.
+    Clip: {fileID: 0}
   Choices: []
