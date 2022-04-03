@@ -47,6 +47,7 @@ namespace BML.Scripts
         private void Update()
         {
             CheckHover();
+            caffeineTimer.UpdateTime();
 
             if (isRoundStarted.Value)
             {
