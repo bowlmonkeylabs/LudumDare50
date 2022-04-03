@@ -613,7 +613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bafb937cf1a47f04f8d27c5e9d7e6f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 5593fcdfe9b47684e84a4657e314cf75, type: 2}
+  Event: {fileID: 11400000, guid: 00fd4efc67464b342bc3af7a4f07947f, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -1131,8 +1131,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handler: {fileID: 1001702414}
   OnStartConversation: {fileID: 11400000, guid: e1532a5f81f3fff46a1d819dedc145e1, type: 2}
+  OnContinueDialogue: {fileID: 11400000, guid: 76f080315d455e748955feecbe75e221, type: 2}
+  OnDialogueFinished: {fileID: 11400000, guid: 00fd4efc67464b342bc3af7a4f07947f, type: 2}
   DialogueText: {fileID: 1838639177}
   SpeakerText: {fileID: 1734474219}
+  IsConversationActive:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 22dcab0a04ff9bf449391d253f53b5ff, type: 2}
 --- !u!1 &1337217502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,6 +1901,21 @@ MonoBehaviour:
   OnStartConversation: {fileID: 11400000, guid: e1532a5f81f3fff46a1d819dedc145e1, type: 2}
   Dialogue: {fileID: 11400000, guid: 06af85f713795c24b9c1bdf50bc78e5e, type: 2}
   ConversationName: Meet with Bob
+  OnDialogueFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1847811032}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1948675483
 GameObject:
   m_ObjectHideFlags: 0
