@@ -118,7 +118,6 @@ namespace BML.Scripts
         {
             if (CurrentTask != Task.GrabBox) return;
             
-            // CurrentTask = SelectNextProduct();
             CurrentTask = ProductDemandManager.GetNextProduct();
             TaskPromptManager.SetPrompt(CurrentTask);
             Debug.Log("Grabbed Box");
@@ -188,14 +187,6 @@ namespace BML.Scripts
                 CurrentDay.Value++;
                 SceneManager.LoadScene(BreakRoomSceneName);
             }
-        }
-
-        private Task SelectNextProduct()
-        {
-            int randomProduct = Random.Range((int) Task.GrabProductA, (int) Task.GrabProductF + 1);
-            TaskManager.Task randomProductTask = (Task) Enum.ToObject(typeof(Task), randomProduct);
-            Debug.Log($"{randomProduct} | {randomProductTask}");
-            return randomProductTask;
         }
     }
 }

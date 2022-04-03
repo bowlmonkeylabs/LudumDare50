@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using BML.Scripts.Utils;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace BML.Scripts
 {
@@ -13,7 +14,13 @@ namespace BML.Scripts
         public TaskManager.Task GetNextProduct()
         {
             return RandomUtils.RandomWithWeights(productWeighting);
-            return TaskManager.Task.DepositBox;
+        }
+
+        private TaskManager.Task UnweightedRandomProduct()
+        {
+            int randomProduct = Random.Range((int) TaskManager.Task.GrabProductA, (int) TaskManager.Task.GrabProductF + 1);
+            TaskManager.Task randomProductTask = (TaskManager.Task) Enum.ToObject(typeof(TaskManager.Task), randomProduct);
+            return randomProductTask;
         }
     }
 }
