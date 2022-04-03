@@ -16,9 +16,9 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
     public class Variable<T> : ScriptableVariableBase, ISerializationCallbackReceiver, ISupportsPrefabSerialization
     {
         [HideInInlineEditors] public bool EnableDebugOnUpdate;
-        [TextArea(7, 10)] [HideInInlineEditors] public String Description;
-        [SerializeField] [LabelText("Default")] [LabelWidth(50f)] private T defaultValue;
-        [SerializeField] [LabelText("Runtime")] [LabelWidth(50f)] private T runtimeValue;
+        [TextArea(7, 10)][HideInInlineEditors] public String Description;
+        [SerializeField][LabelText("Default")][LabelWidth(50f)] private T defaultValue;
+        [SerializeField][LabelText("Runtime")][LabelWidth(50f)] private T runtimeValue;
 
         protected T prevValue;
         protected event OnUpdate OnUpdate;
@@ -48,7 +48,7 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
                 runtimeValue = value;
                 this.OnUpdateDelta?.Invoke(prevValue, runtimeValue);
                 this.OnUpdate?.Invoke();
-                if(EnableDebugOnUpdate)
+                if (EnableDebugOnUpdate)
                     Debug.LogError($"name: {name} | prevValue: {prevValue} | currentValue: {runtimeValue}");
             }
         }
@@ -205,7 +205,7 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
             String fullPath = $"Assets/MyAssets/ScriptableObjects/{InstancePath}/";
 
             //Try saving scriptable object to desired path
-            if(tempScriptableObj.Save(fullPath, InstanceName))
+            if (tempScriptableObj.Save(fullPath, InstanceName))
             {
                 Variable = tempScriptableObj;
                 EnableInstanceOptions = false;
@@ -220,7 +220,7 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
 
         public void Reset()
         {
-            if(Variable != null && !UseConstant)
+            if (Variable != null && !UseConstant)
                 Variable.Reset();
             else
                 Debug.Log($"Trying to reset a SO <{Name}> using a constant value1 Nothing will happen.");
@@ -229,7 +229,7 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
         {
             get
             {
-                if(UseConstant)
+                if (UseConstant)
                     return $"<Const>{ConstantValue}";
 
                 return (Variable != null) ? Variable.name : "<Missing Float>";
@@ -240,11 +240,11 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
         {
             get
             {
-                if(Variable != null)
+                if (Variable != null)
                     return UseConstant ? ConstantValue : Variable.Value;
                 else
                 {
-                    if(UseConstant)
+                    if (UseConstant)
                         return ConstantValue;
                     else
                     {
@@ -255,8 +255,8 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
             }
             set
             {
-                if(Variable != null) Variable.Value = value;
-                else if(!UseConstant) Debug.LogError($"Trying to set {Name} variable that is null!");
+                if (Variable != null) Variable.Value = value;
+                else if (!UseConstant) Debug.LogError($"Trying to set {Name} variable that is null!");
             }
         }
     }
@@ -287,6 +287,10 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
 
     [Serializable]
     [InlineProperty]
+    public class StringReference : Reference<string, StringVariable> { }
+
+    [Serializable]
+    [InlineProperty]
     public class CurveReference : Reference<AnimationCurve, CurveVariable>, ISerializationCallbackReceiver
     {
 
@@ -302,17 +306,17 @@ namespace BML.ScriptableObjectCore.Scripts.Variables
 
         private void RefreshMinMax()
         {
-            if((Variable != null && Variable.Value != null) || (UseConstant && ConstantValue != null))
+            if ((Variable != null && Variable.Value != null) || (UseConstant && ConstantValue != null))
             {
                 var curve = UseConstant ? ConstantValue : Variable.Value;
-                foreach(var key in curve.keys)
+                foreach (var key in curve.keys)
                 {
-                    if(key.value < minValue)
+                    if (key.value < minValue)
                     {
                         minValue = key.value;
                         minTime = key.time;
                     }
-                    if(key.value > maxValue)
+                    if (key.value > maxValue)
                     {
                         maxValue = key.value;
                         maxTime = key.time;

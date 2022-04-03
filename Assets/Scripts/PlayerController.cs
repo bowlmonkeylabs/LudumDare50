@@ -21,9 +21,11 @@ namespace BML.Scripts
         [SerializeField] private LayerMask interactMask;
         [SerializeField] private Transform mainCamera;
         [SerializeField] private float interactDistance = 10f;
+        [SerializeField] private float hoverDistance = 1f;
         [SerializeField] private GameEvent onPissYourself;
         [SerializeField] private GameEvent onConsumeCaffeine;
         [SerializeField] private GameEvent onContinueDialogue;
+        [SerializeField] private GameEvent onUnHover;
 
         private bool havePissedYourself;
         private bool isCaffeinated;
@@ -35,7 +37,7 @@ namespace BML.Scripts
             caffeineTimer.SubscribeFinished(DisableCaffeine);
             originalMoveSpeed = firstPersonController.MoveSpeed;
         }
-        
+
         private void OnDisable()
         {
             onConsumeCaffeine.Unsubscribe(TryConsumeCaffeine);
@@ -44,17 +46,20 @@ namespace BML.Scripts
 
         private void Update()
         {
-            if (!isRoundStarted.Value) return;
-            
-            //Handle Piss Meter
-            if (!havePissedYourself)
-                currentPissAmount.Value += rateOfPissPerSecond.Value * Time.deltaTime;
-            
-            if (!havePissedYourself && currentPissAmount.Value > maxPissAmount.Value)
+            CheckHover();
+
+            if (isRoundStarted.Value)
             {
-                onPissYourself.Raise();
-                havePissedYourself = true;
-                currentPissAmount.Value = maxPissAmount.Value;
+                //Handle Piss Meter
+                if (!havePissedYourself)
+                    currentPissAmount.Value += rateOfPissPerSecond.Value * Time.deltaTime;
+
+                if (!havePissedYourself && currentPissAmount.Value > maxPissAmount.Value)
+                {
+                    onPissYourself.Raise();
+                    havePissedYourself = true;
+                    currentPissAmount.Value = maxPissAmount.Value;
+                }
             }
         }
 
@@ -66,7 +71,7 @@ namespace BML.Scripts
                 onContinueDialogue.Raise();
                 return;
             }
-            
+
             RaycastHit hit;
             if (Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, interactDistance, interactMask))
             {
@@ -74,8 +79,28 @@ namespace BML.Scripts
 
                 InteractionReceiver interactionReceiver = hit.collider.GetComponent<InteractionReceiver>();
                 if (interactionReceiver == null) return;
-                
+
                 interactionReceiver.ReceiveInteraction();
+            }
+        }
+
+        private void CheckHover()
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, hoverDistance, interactMask))
+            {
+                HoverReceiver hoverReceiver = hit.collider.GetComponent<HoverReceiver>();
+                if (hoverReceiver == null)
+                {
+                    onUnHover.Raise();
+                    return;
+                }
+
+                hoverReceiver.ReceiveHover();
+            }
+            else
+            {
+                onUnHover.Raise();
             }
         }
 
