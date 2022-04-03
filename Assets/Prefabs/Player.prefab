@@ -29,8 +29,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6998501395410842932}
-  m_RootOrder: 5
+  m_Father: {fileID: 8990894633311890267}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1407495964
 MonoBehaviour:
@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 376c84c12d694f86bbb363aad2d8dc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distToStep: 4
-  volumeMult: 0.35
+  distToStep: 3.5
+  volumeMult: 0.1
   audiosSource: {fileID: 1407495963}
   footStepSounds:
   - {fileID: 8300000, guid: b1be1573d50acd943828241b5f503b44, type: 3}
@@ -186,7 +186,6 @@ Transform:
   - {fileID: 3954577972930267366}
   - {fileID: 625060303346171123}
   - {fileID: 7999364135471559343}
-  - {fileID: 1407495962}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
