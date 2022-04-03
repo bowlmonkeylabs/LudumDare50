@@ -1,4 +1,5 @@
 ﻿using BML.ScriptableObjectCore.Scripts.Events;
+using BML.ScriptableObjectCore.Scripts.Variables;
 using QuantumTek.QuantumDialogue;
 using UnityEngine;
 using UnityEngine.Events;
@@ -17,6 +18,8 @@ namespace BML.Scripts
         [SerializeField] private DynamicGameEvent OnStartConversation;
         [SerializeField] private QD_Dialogue Dialogue;
         [SerializeField] private string ConversationName = "Meet with Bob";
+        [SerializeField] private IntReference CurrentDay;
+        [SerializeField] private bool AppendDayIndex;
         
         public UnityEvent OnDialogueFinished;
 
@@ -28,6 +31,8 @@ namespace BML.Scripts
                 ConversationName = ConversationName,
                 OnDialogueFinished = OnDialogueFinished
             };
+            
+            if (AppendDayIndex) dialogueInfo.ConversationName += CurrentDay.Value;
             OnStartConversation.Raise(dialogueInfo);
         }
     }

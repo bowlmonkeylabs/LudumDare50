@@ -1901,6 +1901,14 @@ MonoBehaviour:
   OnStartConversation: {fileID: 11400000, guid: e1532a5f81f3fff46a1d819dedc145e1, type: 2}
   Dialogue: {fileID: 11400000, guid: 06af85f713795c24b9c1bdf50bc78e5e, type: 2}
   ConversationName: Meet with Bob
+  CurrentDay:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 87ab714844c4fba4fb305623e949d41b, type: 2}
+  AppendDayIndex: 0
   OnDialogueFinished:
     m_PersistentCalls:
       m_Calls:
