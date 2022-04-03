@@ -34,7 +34,6 @@ namespace BML.Scripts
         [SerializeField] private GameEvent OnPissYourself;
         
         [Title("TMP Text References")]
-        [SerializeField] private TMP_Text CurrentTaskText;
         [SerializeField] private TMP_Text TimeLeftText;
         [SerializeField] private TMP_Text QuotaText;
         [SerializeField] private TMP_Text BoxesDepositedText;
