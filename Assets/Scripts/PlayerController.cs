@@ -13,6 +13,7 @@ namespace BML.Scripts
         [SerializeField] private BoolReference isRoundStarted;
         [SerializeField] private BoolReference IsConversationActive;
         [SerializeField] private BoolReference IsHoverTextOpen;
+        [SerializeField] private BoolReference IsDayTransitioning;
         [SerializeField] private FloatReference currentPissAmount;
         [SerializeField] private FloatReference maxPissAmount;
         [SerializeField] private FloatReference rateOfPissPerSecond;
@@ -68,7 +69,7 @@ namespace BML.Scripts
         public void OnInteract()
         {
             //Continue dialogue if currently in conversation
-            if (IsConversationActive.Value)
+            if (IsConversationActive.Value || IsDayTransitioning.Value)
             {
                 onContinueDialogue.Raise();
                 return;
