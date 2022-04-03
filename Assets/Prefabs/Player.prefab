@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distToStep: 4
-  volumeMult: 0.25
+  volumeMult: 0.35
   audiosSource: {fileID: 1407495963}
   footStepSounds:
   - {fileID: 8300000, guid: b1be1573d50acd943828241b5f503b44, type: 3}
