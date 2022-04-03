@@ -332,6 +332,10 @@ PrefabInstance:
       propertyPath: GroundLayers.m_Bits
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: IsConversationActive.Variable
+      value: 
+      objectReference: {fileID: 11400000, guid: 22dcab0a04ff9bf449391d253f53b5ff, type: 2}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
@@ -483,6 +487,13 @@ MonoBehaviour:
     InstancePath: IntermediateProperties
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 0f039408322c59140ba4583904068130, type: 2}
+  IsConversationActive:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 22dcab0a04ff9bf449391d253f53b5ff, type: 2}
   currentPissAmount:
     UseConstant: 0
     EnableInstanceOptions: 0
@@ -529,6 +540,7 @@ MonoBehaviour:
   interactDistance: 10
   onPissYourself: {fileID: 11400000, guid: c1b2c344986a56e479e5216fb4254828, type: 2}
   onConsumeCaffeine: {fileID: 11400000, guid: 1a31693f858c73249b1cf3e6a11699cc, type: 2}
+  onContinueDialogue: {fileID: 11400000, guid: 76f080315d455e748955feecbe75e221, type: 2}
 --- !u!1001 &7332487764060689678
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc788fe28a1947c5906bf24c0472406, type: 3}
+  m_Name: BobDialogue
+  m_EditorClassIdentifier: 
+  Conversations:
+  - ID: 1
+    Name: Meet with Bob
+    FirstMessage: 2
+  Speakers:
+  - ID: 0
+    Name: Bob
+    Icon: {fileID: 0}
+  Messages:
+  - ID: 2
+    Speaker: 0
+    SpeakerName: Bob
+    PreviousMessage: -1
+    NextMessage: 3
+    MessageText: Greetings, I am Bob.
+    Clip: {fileID: 0}
+  - ID: 3
+    Speaker: 0
+    SpeakerName: Bob
+    PreviousMessage: 2
+    NextMessage: -1
+    MessageText: I am still Bob
+    Clip: {fileID: 0}
+  Choices: []

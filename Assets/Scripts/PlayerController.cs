@@ -11,6 +11,7 @@ namespace BML.Scripts
     {
         [SerializeField] private FirstPersonController firstPersonController;
         [SerializeField] private BoolReference isRoundStarted;
+        [SerializeField] private BoolReference IsConversationActive;
         [SerializeField] private FloatReference currentPissAmount;
         [SerializeField] private FloatReference maxPissAmount;
         [SerializeField] private FloatReference rateOfPissPerSecond;
@@ -22,6 +23,7 @@ namespace BML.Scripts
         [SerializeField] private float interactDistance = 10f;
         [SerializeField] private GameEvent onPissYourself;
         [SerializeField] private GameEvent onConsumeCaffeine;
+        [SerializeField] private GameEvent onContinueDialogue;
 
         private bool havePissedYourself;
         private bool isCaffeinated;
@@ -58,6 +60,13 @@ namespace BML.Scripts
 
         public void OnInteract()
         {
+            //Continue dialogue if currently in conversation
+            if (IsConversationActive.Value)
+            {
+                onContinueDialogue.Raise();
+                return;
+            }
+            
             RaycastHit hit;
             if (Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, interactDistance, interactMask))
             {
