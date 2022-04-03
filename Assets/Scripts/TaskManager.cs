@@ -32,23 +32,18 @@ namespace BML.Scripts
         [SerializeField] private GameEvent OnDepositBox;
         [SerializeField] private GameEvent OnTalkToSupervisor;
         [SerializeField] private GameEvent OnPissYourself;
+
+        [Title("Task UIs")]
+        [SerializeField] private TaskPromptManager TaskPromptManager;
+
+        [Title("Product Demand")]
+        [SerializeField] private ProductDemandManager ProductDemandManager;
         
-        [Title("TMP Text References")]
+        [Title("Other UI Text")]
         [SerializeField] private TMP_Text TimeLeftText;
         [SerializeField] private TMP_Text QuotaText;
         [SerializeField] private TMP_Text BoxesDepositedText;
         [SerializeField] private TMP_Text PissAmountText;
-
-        [Title("Task Text")]
-        [SerializeField] private String GrabBoxText = "Grab a Box";
-        [SerializeField] private String GrabProductText = "Grab Product ";
-        [SerializeField] private String DepositBoxText = "Deposit the Box";
-        [SerializeField] private String TalkToSupervisorText = "Talk to Supervisor";
-
-        [Title("Task UIs")]
-        [SerializeField] private TaskPromptManager TaskPromptManager;
-        
-        [Title("Other UI Text")]
         [SerializeField] private String TimeLeftTextPrefix = "Time: ";
         [SerializeField] private String QuotaTextPrefix = "Quota: ";
         [SerializeField] private String BoxesDepositedTextPrefix = "Boxes Deposited: ";
@@ -123,7 +118,8 @@ namespace BML.Scripts
         {
             if (CurrentTask != Task.GrabBox) return;
             
-            CurrentTask = SelectNextProduct();
+            // CurrentTask = SelectNextProduct();
+            CurrentTask = ProductDemandManager.GetNextProduct();
             TaskPromptManager.SetPrompt(CurrentTask);
             Debug.Log("Grabbed Box");
         }
