@@ -275,22 +275,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5517124511458446217, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517124511458446217, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517124511458446217, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517124511458446217, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1614065879, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
     - target: {fileID: 5517124511574351644, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -324,18 +312,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5517124511582315921, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517124511694034158, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517124511694034158, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5517124511694034158, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -469,6 +445,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+--- !u!114 &67471772 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5517124513024349475, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &67471773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5517124512866409381, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &67471774 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5517124511582315920, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &67471775 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5517124511574351619, guid: 96ba539f556bcab46be4fb56036f43ec, type: 3}
+  m_PrefabInstance: {fileID: 67471771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &89876900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,15 +2746,16 @@ MonoBehaviour:
   OnDepositBox: {fileID: 11400000, guid: af798d2931ec4ad4fb2de166680d9d21, type: 2}
   OnTalkToSupervisor: {fileID: 11400000, guid: bd2f9071cac0917418e5e1de6951ca0c, type: 2}
   OnPissYourself: {fileID: 11400000, guid: c1b2c344986a56e479e5216fb4254828, type: 2}
-  CurrentTaskText: {fileID: 0}
-  TimeLeftText: {fileID: 0}
-  QuotaText: {fileID: 0}
-  BoxesDepositedText: {fileID: 0}
-  PissAmountText: {fileID: 0}
+  CurrentTaskText: {fileID: 67471775}
+  TimeLeftText: {fileID: 67471775}
+  QuotaText: {fileID: 67471774}
+  BoxesDepositedText: {fileID: 67471773}
+  PissAmountText: {fileID: 67471772}
   GrabBoxText: Grab a Box
   GrabProductText: Grab  Product
   DepositBoxText: Deposit the Box
   TalkToSupervisorText: Talk to Supervisor
+  TaskPromptManager: {fileID: 0}
   TimeLeftTextPrefix: 'Time: '
   QuotaTextPrefix: 'Quota: '
   BoxesDepositedTextPrefix: 'Boxes Deposited: '

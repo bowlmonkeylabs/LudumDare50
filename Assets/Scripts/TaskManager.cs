@@ -45,6 +45,9 @@ namespace BML.Scripts
         [SerializeField] private String GrabProductText = "Grab Product ";
         [SerializeField] private String DepositBoxText = "Deposit the Box";
         [SerializeField] private String TalkToSupervisorText = "Talk to Supervisor";
+
+        [Title("Task UIs")]
+        [SerializeField] private TaskPromptManager TaskPromptManager;
         
         [Title("Other UI Text")]
         [SerializeField] private String TimeLeftTextPrefix = "Time: ";
@@ -56,10 +59,15 @@ namespace BML.Scripts
         private int numberOfProducts = 6;
         private int currentProductIndex;
 
-        enum Task
+        public enum Task
         {
             GrabBox,
-            GrabProduct,
+            GrabProductA,
+            GrabProductB,
+            GrabProductC,
+            GrabProductD,
+            GrabProductE,
+            GrabProductF,
             DepositBox,
             TalkToSupervisorEndGame,
             TalkToSupervisorStartGame
@@ -68,12 +76,12 @@ namespace BML.Scripts
         private void Awake()
         {
             OnGrabBox.Subscribe(GrabBox);
-            OnGrabProductA.Subscribe(() => GrabProduct(0));
-            OnGrabProductB.Subscribe(() => GrabProduct(1));
-            OnGrabProductC.Subscribe(() => GrabProduct(2));
-            OnGrabProductD.Subscribe(() => GrabProduct(3));
-            OnGrabProductE.Subscribe(() => GrabProduct(4));
-            OnGrabProductF.Subscribe(() => GrabProduct(5));
+            OnGrabProductA.Subscribe(HandleGrabProductA);
+            OnGrabProductB.Subscribe(HandleGrabProductB);
+            OnGrabProductC.Subscribe(HandleGrabProductC);
+            OnGrabProductD.Subscribe(HandleGrabProductD);
+            OnGrabProductE.Subscribe(HandleGrabProductE);
+            OnGrabProductF.Subscribe(HandleGrabProductF);
             OnDepositBox.Subscribe(DepositBox);
             DayTimer.SubscribeFinished(TimerComplete);
             OnPissYourself.Subscribe(PissYourself);
@@ -83,12 +91,12 @@ namespace BML.Scripts
         private void OnDisable()
         {
             OnGrabBox.Unsubscribe(GrabBox);
-            OnGrabProductA.Unsubscribe(() => GrabProduct(0));
-            OnGrabProductB.Unsubscribe(() => GrabProduct(1));
-            OnGrabProductC.Unsubscribe(() => GrabProduct(2));
-            OnGrabProductD.Unsubscribe(() => GrabProduct(3));
-            OnGrabProductE.Unsubscribe(() => GrabProduct(4));
-            OnGrabProductF.Unsubscribe(() => GrabProduct(5));
+            OnGrabProductA.Unsubscribe(HandleGrabProductA);
+            OnGrabProductB.Unsubscribe(HandleGrabProductB);
+            OnGrabProductC.Unsubscribe(HandleGrabProductC);
+            OnGrabProductD.Unsubscribe(HandleGrabProductD);
+            OnGrabProductE.Unsubscribe(HandleGrabProductE);
+            OnGrabProductF.Unsubscribe(HandleGrabProductF);
             OnDepositBox.Unsubscribe(DepositBox);
             DayTimer.UnsubscribeFinished(TimerComplete);
             OnPissYourself.Unsubscribe(PissYourself);
@@ -115,23 +123,28 @@ namespace BML.Scripts
         {
             if (CurrentTask != Task.GrabBox) return;
             
-            CurrentTask = Task.GrabProduct;
-            SelectNextProduct();
-            CurrentTaskText.text = GrabProductText + currentProductIndex;
+            CurrentTask = SelectNextProduct();
+            TaskPromptManager.SetPrompt(CurrentTask);
             Debug.Log("Grabbed Box");
             
         }
 
-        private void GrabProduct(int productIndex)
+        private void HandleGrabProductA() => GrabProduct(Task.GrabProductA);
+        private void HandleGrabProductB() => GrabProduct(Task.GrabProductB);
+        private void HandleGrabProductC() => GrabProduct(Task.GrabProductC);
+        private void HandleGrabProductD() => GrabProduct(Task.GrabProductD);
+        private void HandleGrabProductE() => GrabProduct(Task.GrabProductE);
+        private void HandleGrabProductF() => GrabProduct(Task.GrabProductF);
+
+        private void GrabProduct(Task task)
         {
-            if (CurrentTask != Task.GrabProduct || 
-                productIndex != currentProductIndex)
+            if (CurrentTask != task)
                 return;
             
             CurrentTask = Task.DepositBox;
             CurrentTaskText.text = DepositBoxText;
-            Debug.Log("Grabbed Product");
             
+            Debug.Log("Grabbed Product");
         }
 
         private void DepositBox()
@@ -182,9 +195,10 @@ namespace BML.Scripts
             }
         }
 
-        private void SelectNextProduct()
+        private Task SelectNextProduct()
         {
-            currentProductIndex = Random.Range(0, numberOfProducts);
+            int randomProduct = Random.Range((int) Task.GrabProductA, (int) Task.GrabProductF + 1);
+            return (Task) Enum.ToObject(typeof(Task), randomProduct);
         }
     }
 }
