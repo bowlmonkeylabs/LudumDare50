@@ -538,9 +538,11 @@ MonoBehaviour:
     m_Bits: 65
   mainCamera: {fileID: 8990894633311890267}
   interactDistance: 10
+  hoverDistance: 1
   onPissYourself: {fileID: 11400000, guid: c1b2c344986a56e479e5216fb4254828, type: 2}
   onConsumeCaffeine: {fileID: 11400000, guid: 1a31693f858c73249b1cf3e6a11699cc, type: 2}
   onContinueDialogue: {fileID: 11400000, guid: 76f080315d455e748955feecbe75e221, type: 2}
+  onUnHover: {fileID: 11400000, guid: a2e46f7108331c749842a7c13e56143d, type: 2}
 --- !u!1001 &7332487764060689678
 PrefabInstance:
   m_ObjectHideFlags: 0
