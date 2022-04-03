@@ -1,6 +1,7 @@
 ﻿using System;
 using BML.ScriptableObjectCore.Scripts.Events;
 using BML.ScriptableObjectCore.Scripts.Variables;
+using DefaultNamespace;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -11,7 +12,11 @@ namespace BML.Scripts
 {
     public class TaskManager : MonoBehaviour
     {
+        [Title("References")]
+        [SerializeField] private DayTransition dayTransition; 
+        
         [Title("State Vars")]
+        
         [SerializeField] private TimerReference DayTimer;
         [SerializeField] private IntReference CurrentQuota;
         [SerializeField] private IntReference BoxesDepositedCount;
@@ -187,7 +192,7 @@ namespace BML.Scripts
                 // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 //if final day, do camera turn around and set player model to robot model
                 CurrentDay.Value++;
-                SceneManager.LoadScene(BreakRoomSceneName);
+                dayTransition.StartTransiton();
             }
         }
     }
