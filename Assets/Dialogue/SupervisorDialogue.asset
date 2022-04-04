@@ -24,10 +24,10 @@ MonoBehaviour:
     FirstMessage: 18
   - ID: 11
     Name: Day2RoundStart
-    FirstMessage: -1
+    FirstMessage: 21
   - ID: 12
     Name: Day3RoundStart
-    FirstMessage: -1
+    FirstMessage: 22
   - ID: 13
     Name: Day2RoundEnd
     FirstMessage: 9
@@ -36,7 +36,7 @@ MonoBehaviour:
     FirstMessage: 24
   - ID: 15
     Name: Day3RoundEnd
-    FirstMessage: -1
+    FirstMessage: 23
   - ID: 16
     Name: Day1RoundEnd
     FirstMessage: 19

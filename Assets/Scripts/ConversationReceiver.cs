@@ -42,7 +42,7 @@ namespace BML.Scripts
             handler.dialogue = dialogueInfo.Dialogue;
             handler.SetConversation(dialogueInfo.ConversationName);
             UpdateDialogueText();
-            DialogueText.gameObject.SetActive(true);
+            DialogueText.transform.parent.gameObject.SetActive(true);
             SpeakerText.gameObject.SetActive(true);
             IsConversationActive.Value = true;
         }
@@ -66,7 +66,7 @@ namespace BML.Scripts
         {
             OnDialogueFinished.Raise();
             currentOnFinishDialogueEvent.Invoke();
-            DialogueText.gameObject.SetActive(false);
+            DialogueText.transform.parent.gameObject.SetActive(false);
             SpeakerText.gameObject.SetActive(false);
             IsConversationActive.Value = false;
         }

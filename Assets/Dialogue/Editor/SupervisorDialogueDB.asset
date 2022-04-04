@@ -327,8 +327,9 @@ MonoBehaviour:
       Y: 40
       AllowMultipleConnections: 0
       Connections:
-        keys: 
-        values: []
+        keys: 15000000
+        values:
+        - Array: 01000000
     AllowedInputs: []
     AllowedOutputs:
     - InputType: 3
@@ -351,8 +352,9 @@ MonoBehaviour:
       Y: 40
       AllowMultipleConnections: 0
       Connections:
-        keys: 
-        values: []
+        keys: 16000000
+        values:
+        - Array: 01000000
     AllowedInputs: []
     AllowedOutputs:
     - InputType: 3
@@ -425,8 +427,9 @@ MonoBehaviour:
       Y: 40
       AllowMultipleConnections: 0
       Connections:
-        keys: 
-        values: []
+        keys: 17000000
+        values:
+        - Array: 01000000
     AllowedInputs: []
     AllowedOutputs:
     - InputType: 3
@@ -764,8 +767,9 @@ MonoBehaviour:
       Y: 35
       AllowMultipleConnections: 0
       Connections:
-        keys: 
-        values: []
+        keys: 0b000000
+        values:
+        - Array: 00000000
     Outputs:
     - ID: 0
       Name: Speaker
@@ -857,8 +861,9 @@ MonoBehaviour:
       Y: 35
       AllowMultipleConnections: 0
       Connections:
-        keys: 
-        values: []
+        keys: 0c000000
+        values:
+        - Array: 00000000
     Outputs:
     - ID: 0
       Name: Speaker
@@ -950,8 +955,9 @@ MonoBehaviour:
       Y: 35
       AllowMultipleConnections: 0
       Connections:
-        keys: 
-        values: []
+        keys: 0f000000
+        values:
+        - Array: 00000000
     Outputs:
     - ID: 0
       Name: Speaker
@@ -2164,7 +2170,7 @@ MonoBehaviour:
     Data:
       ID: 11
       Name: Day2RoundStart
-      FirstMessage: -1
+      FirstMessage: 21
   - ID: 12
     Type: 1
     Window:
@@ -2192,7 +2198,7 @@ MonoBehaviour:
     Data:
       ID: 12
       Name: Day3RoundStart
-      FirstMessage: -1
+      FirstMessage: 22
   - ID: 13
     Type: 1
     Window:
@@ -2276,7 +2282,7 @@ MonoBehaviour:
     Data:
       ID: 15
       Name: Day3RoundEnd
-      FirstMessage: -1
+      FirstMessage: 23
   - ID: 16
     Type: 1
     Window:
