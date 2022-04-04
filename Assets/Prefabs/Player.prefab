@@ -650,6 +650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstPersonController: {fileID: 4443552111781188187}
+  highPissPercent: 0.75
   isRoundStarted:
     UseConstant: 0
     EnableInstanceOptions: 0
@@ -746,6 +747,7 @@ MonoBehaviour:
   onContinueDialogue: {fileID: 11400000, guid: 76f080315d455e748955feecbe75e221, type: 2}
   onUnHover: {fileID: 11400000, guid: a2e46f7108331c749842a7c13e56143d, type: 2}
   onGetPissBottle: {fileID: 11400000, guid: d09d8b6676cfcd04abe36022b83f3b06, type: 2}
+  OnPissHigh: {fileID: 11400000, guid: 06e8ad2fc1fb3dd45b7b8a0bc5716a25, type: 2}
   HoverText: {fileID: 0}
 --- !u!1001 &7332487764060689678
 PrefabInstance:

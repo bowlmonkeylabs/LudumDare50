@@ -10,6 +10,7 @@ namespace BML.Scripts
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private FirstPersonController firstPersonController;
+        [SerializeField] private float highPissPercent = .75f;
         [SerializeField] private BoolReference isRoundStarted;
         [SerializeField] private BoolReference IsConversationActive;
         [SerializeField] private BoolReference IsHoverTextOpen;
@@ -32,11 +33,13 @@ namespace BML.Scripts
         [SerializeField] private GameEvent onContinueDialogue;
         [SerializeField] private GameEvent onUnHover;
         [SerializeField] private GameEvent onGetPissBottle;
+        [SerializeField] private GameEvent OnPissHigh;
         [SerializeField] private TMP_Text HoverText;
 
         private bool havePissedYourself;
         private bool isCaffeinated;
         private float originalMoveSpeed;
+        private bool isPissHigh;
 
         private void Awake()
         {
@@ -72,6 +75,17 @@ namespace BML.Scripts
                     havePissedYourself = true;
                     currentPissAmount.Value = maxPissAmount.Value;
                 }
+            }
+
+            var percentPiss = currentPissAmount.Value / maxPissAmount.Value;
+            if (!isPissHigh && percentPiss > highPissPercent)
+            {
+                OnPissHigh.Raise();
+                isPissHigh = true;
+            }
+            if (isPissHigh && percentPiss <= highPissPercent)
+            {
+                isPissHigh = false;
             }
         }
 

@@ -14,7 +14,7 @@ namespace BML.Scripts
     public class TaskManager : MonoBehaviour
     {
         [SerializeField] private float lowerTimePercent = .25f;
-        
+
         [Title("References")]
         [SerializeField] private DayTransition dayTransition; 
         

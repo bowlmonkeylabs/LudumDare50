@@ -1,5 +1,478 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &621917359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621917360}
+  - component: {fileID: 621917361}
+  - component: {fileID: 621917362}
+  m_Layer: 5
+  m_Name: FlickFeedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &621917360
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621917359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 990657442340090246}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &621917361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621917359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da43522623d4704e979466dc7650b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks: []
+  InitializationMode: 2
+  SafeMode: 3
+  Direction: 0
+  AutoChangeDirectionOnEnd: 0
+  AutoPlayOnStart: 0
+  AutoPlayOnEnable: 1
+  DurationMultiplier: 1
+  DisplayFullDurationDetails: 0
+  CooldownDuration: 0
+  InitialDelay: 0
+  CanPlayWhileAlreadyPlaying: 1
+  ChanceToPlay: 100
+  FeedbacksIntensity: 1
+  Events:
+    TriggerMMFeedbacksEvents: 0
+    TriggerUnityEvents: 1
+    OnPlay:
+      m_PersistentCalls:
+        m_Calls: []
+    OnPause:
+      m_PersistentCalls:
+        m_Calls: []
+    OnResume:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRevert:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  DebugActive: 0
+  FeedbacksList:
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  - id: 4
+  - id: 5
+  KeepPlayModeChanges: 0
+  PerformanceMode: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: MMF_LooperStart, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: -1182226127
+        Label: Looper Start
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        Owner: {fileID: 621917361}
+        DebugActive: 0
+        PauseDuration: 0
+        RandomizePauseDuration: 0
+        MinPauseDuration: 1
+        MaxPauseDuration: 3
+        RandomizeOnEachPlay: 1
+        ScriptDriven: 0
+        AutoResume: 0
+        AutoResumeAfter: 0.25
+    00000001:
+      type: {class: MMF_Events, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: -221162737
+        Label: Events
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        Owner: {fileID: 621917361}
+        DebugActive: 0
+        PlayEvents:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1082751805}
+              m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_MethodName: SetActive
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 1
+              m_CallState: 2
+        StopEvents:
+          m_PersistentCalls:
+            m_Calls: []
+        InitializationEvents:
+          m_PersistentCalls:
+            m_Calls: []
+        ResetEvents:
+          m_PersistentCalls:
+            m_Calls: []
+    00000002:
+      type: {class: MMF_Pause, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: -532167913
+        Label: Pause
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        Owner: {fileID: 621917361}
+        DebugActive: 0
+        PauseDuration: 0.35
+        RandomizePauseDuration: 0
+        MinPauseDuration: 1
+        MaxPauseDuration: 3
+        RandomizeOnEachPlay: 1
+        ScriptDriven: 0
+        AutoResume: 0
+        AutoResumeAfter: 0.25
+    00000003:
+      type: {class: MMF_Events, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: -292637301
+        Label: Events
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        Owner: {fileID: 621917361}
+        DebugActive: 0
+        PlayEvents:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1082751805}
+              m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_MethodName: SetActive
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        StopEvents:
+          m_PersistentCalls:
+            m_Calls: []
+        InitializationEvents:
+          m_PersistentCalls:
+            m_Calls: []
+        ResetEvents:
+          m_PersistentCalls:
+            m_Calls: []
+    00000004:
+      type: {class: MMF_Pause, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: 155425279
+        Label: Pause
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        Owner: {fileID: 621917361}
+        DebugActive: 0
+        PauseDuration: 0.35
+        RandomizePauseDuration: 0
+        MinPauseDuration: 1
+        MaxPauseDuration: 3
+        RandomizeOnEachPlay: 1
+        ScriptDriven: 0
+        AutoResume: 0
+        AutoResumeAfter: 0.25
+    00000005:
+      type: {class: MMF_Looper, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: -977013506
+        Label: Looper
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        Owner: {fileID: 621917361}
+        DebugActive: 0
+        PauseDuration: 0
+        RandomizePauseDuration: 0
+        MinPauseDuration: 1
+        MaxPauseDuration: 3
+        RandomizeOnEachPlay: 1
+        ScriptDriven: 0
+        AutoResume: 0
+        AutoResumeAfter: 0.25
+        LoopAtLastPause: 0
+        LoopAtLastLoopStart: 1
+        InfiniteLoop: 1
+        NumberOfLoops: 2
+        NumberOfLoopsLeft: 1
+        InInfiniteLoop: 0
+--- !u!114 &621917362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621917359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bcc561d61138de47bdb32d717cd44c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnityEvents:
+  - UnityCallback: 2
+    randomDelay: 0
+    delay: 0.5
+    delayMin: 0
+    delayMax: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 621917361}
+          m_TargetAssemblyTypeName: MoreMountains.Feedbacks.MMF_Player, MoreMountains.Feedbacks
+          m_MethodName: PlayFeedbacks
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &1082751805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082751806}
+  - component: {fileID: 1082751808}
+  - component: {fileID: 1082751807}
+  m_Layer: 5
+  m_Name: WarningSign
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1082751806
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082751805}
+  m_LocalRotation: {x: -0, y: -0, z: 0.05363249, w: 0.9985607}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.69536424, y: 0.69536424, z: 0.69536424}
+  m_Children: []
+  m_Father: {fileID: 990657442340090246}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.149}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -96, y: 242.6}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1082751808
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082751805}
+  m_CullTransparentMesh: 1
+--- !u!114 &1082751807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082751805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 13d151906dca6544dadba0e0c1164fad, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2036987662
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,15 +1229,161 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 0
-    SerializedBytes: 01010e00000042006f006f006c0043006f006e0064006900740069006f006e0073002f000000000184000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0042006f006f006c0043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620000000000060100000000000000022f01000000015500000042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0042006f006f006c0043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065000100000001010f00000074006100720067006500740050006100720061006d0065007400650072002f02000000015000000042004d004c002e00530063007200690070007400610062006c0065004f0062006a0065006300740043006f00720065002e0053006300720069007000740073002e005600610072006900610062006c00650073002e0042006f006f006c005200650066006500720065006e00630065002c002000530063007200690070007400610062006c0065004f0062006a00650063007400530079007300740065006d00020000002b010b00000055007300650043006f006e007300740061006e007400002b011500000045006e00610062006c00650049006e007300740061006e00630065004f007000740069006f006e007300002d010c00000049006e007300740061006e00630065004e0061006d00650027010c00000049006e007300740061006e00630065005000610074006800011600000049006e007400650072006d00650064006900610074006500500072006f0070006500720074006900650073002b010d00000043006f006e007300740061006e007400560061006c0075006500000b01080000005600610072006900610062006c0065000000000005010105000000760061006c00750065003002000000030000002b010b00000055007300650043006f006e007300740061006e007400012b011500000045006e00610062006c00650049006e007300740061006e00630065004f007000740069006f006e007300002d010c00000049006e007300740061006e00630065004e0061006d00650027010c00000049006e007300740061006e00630065005000610074006800011600000049006e007400650072006d00650064006900610074006500500072006f0070006500720074006900650073002b010d00000043006f006e007300740061006e007400560061006c0075006500012d01080000005600610072006900610062006c0065000505070501010f00000046006c006f006100740043006f006e0064006900740069006f006e0073002f030000000185000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0046006c006f006100740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620004000000060000000000000000070501010d00000049006e00740043006f006e0064006900740069006f006e0073002f040000000183000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0049006e00740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620005000000060000000000000000070501011100000056006500630074006f007200320043006f006e0064006900740069006f006e0073002f050000000187000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0056006500630074006f007200320043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620006000000060000000000000000070501011100000056006500630074006f007200330043006f006e0064006900740069006f006e0073002f060000000187000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0056006500630074006f007200330043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c0069006200070000000600000000000000000705010113000000470061006d0065004500760065006e00740043006f006e0064006900740069006f006e0073002f070000000189000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e00470061006d0065004500760065006e00740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620008000000060000000000000000070501011a000000440079006e0061006d0069006300470061006d0065004500760065006e00740043006f006e0064006900740069006f006e0073002f080000000190000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e00440079006e0061006d0069006300470061006d0065004500760065006e00740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c0069006200090000000600000000000000000705
+    SerializedFormat: 2
+    SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 9be04e2f86afa4946bb74161da89b89c, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: BoolConditions
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.BoolCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.BoolCondition,
+        StateMachine
+    - Name: targetParameter
+      Entry: 7
+      Data: 2|BML.ScriptableObjectCore.Scripts.Variables.BoolReference, ScriptableObjectSystem
+    - Name: UseConstant
+      Entry: 5
+      Data: false
+    - Name: EnableInstanceOptions
+      Entry: 5
+      Data: false
+    - Name: InstanceName
+      Entry: 6
+      Data: 
+    - Name: InstancePath
+      Entry: 1
+      Data: IntermediateProperties
+    - Name: ConstantValue
+      Entry: 5
+      Data: false
+    - Name: Variable
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: value
+      Entry: 7
+      Data: 3|BML.ScriptableObjectCore.Scripts.Variables.BoolReference, ScriptableObjectSystem
+    - Name: UseConstant
+      Entry: 5
+      Data: true
+    - Name: EnableInstanceOptions
+      Entry: 5
+      Data: false
+    - Name: InstanceName
+      Entry: 6
+      Data: 
+    - Name: InstancePath
+      Entry: 1
+      Data: IntermediateProperties
+    - Name: ConstantValue
+      Entry: 5
+      Data: true
+    - Name: Variable
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: FloatConditions
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.FloatCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IntConditions
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.IntCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Vector2Conditions
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.Vector2Condition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Vector3Conditions
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.Vector3Condition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: GameEventConditions
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.GameEventCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DynamicGameEventConditions
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.DynamicGameEventCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   StateMachines: []
   ValidStates: []
   InvalidStates: []
@@ -797,15 +1416,161 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 0
-    SerializedBytes: 01010e00000042006f006f006c0043006f006e0064006900740069006f006e0073002f000000000184000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0042006f006f006c0043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620000000000060100000000000000022f01000000015500000042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0042006f006f006c0043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065000100000001010f00000074006100720067006500740050006100720061006d0065007400650072002f02000000015000000042004d004c002e00530063007200690070007400610062006c0065004f0062006a0065006300740043006f00720065002e0053006300720069007000740073002e005600610072006900610062006c00650073002e0042006f006f006c005200650066006500720065006e00630065002c002000530063007200690070007400610062006c0065004f0062006a00650063007400530079007300740065006d00020000002b010b00000055007300650043006f006e007300740061006e007400002b011500000045006e00610062006c00650049006e007300740061006e00630065004f007000740069006f006e007300002d010c00000049006e007300740061006e00630065004e0061006d00650027010c00000049006e007300740061006e00630065005000610074006800011600000049006e007400650072006d00650064006900610074006500500072006f0070006500720074006900650073002b010d00000043006f006e007300740061006e007400560061006c0075006500000b01080000005600610072006900610062006c0065000000000005010105000000760061006c00750065003002000000030000002b010b00000055007300650043006f006e007300740061006e007400012b011500000045006e00610062006c00650049006e007300740061006e00630065004f007000740069006f006e007300002d010c00000049006e007300740061006e00630065004e0061006d00650027010c00000049006e007300740061006e00630065005000610074006800011600000049006e007400650072006d00650064006900610074006500500072006f0070006500720074006900650073002b010d00000043006f006e007300740061006e007400560061006c0075006500002d01080000005600610072006900610062006c0065000505070501010f00000046006c006f006100740043006f006e0064006900740069006f006e0073002f030000000185000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0046006c006f006100740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620004000000060000000000000000070501010d00000049006e00740043006f006e0064006900740069006f006e0073002f040000000183000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0049006e00740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620005000000060000000000000000070501011100000056006500630074006f007200320043006f006e0064006900740069006f006e0073002f050000000187000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0056006500630074006f007200320043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620006000000060000000000000000070501011100000056006500630074006f007200330043006f006e0064006900740069006f006e0073002f060000000187000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0056006500630074006f007200330043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c0069006200070000000600000000000000000705010113000000470061006d0065004500760065006e00740043006f006e0064006900740069006f006e0073002f070000000189000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e00470061006d0065004500760065006e00740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620008000000060000000000000000070501011a000000440079006e0061006d0069006300470061006d0065004500760065006e00740043006f006e0064006900740069006f006e0073002f080000000190000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e00440079006e0061006d0069006300470061006d0065004500760065006e00740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c0069006200090000000600000000000000000705
+    SerializedFormat: 2
+    SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 9be04e2f86afa4946bb74161da89b89c, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: BoolConditions
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.BoolCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.BoolCondition,
+        StateMachine
+    - Name: targetParameter
+      Entry: 7
+      Data: 2|BML.ScriptableObjectCore.Scripts.Variables.BoolReference, ScriptableObjectSystem
+    - Name: UseConstant
+      Entry: 5
+      Data: false
+    - Name: EnableInstanceOptions
+      Entry: 5
+      Data: false
+    - Name: InstanceName
+      Entry: 6
+      Data: 
+    - Name: InstancePath
+      Entry: 1
+      Data: IntermediateProperties
+    - Name: ConstantValue
+      Entry: 5
+      Data: false
+    - Name: Variable
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: value
+      Entry: 7
+      Data: 3|BML.ScriptableObjectCore.Scripts.Variables.BoolReference, ScriptableObjectSystem
+    - Name: UseConstant
+      Entry: 5
+      Data: true
+    - Name: EnableInstanceOptions
+      Entry: 5
+      Data: false
+    - Name: InstanceName
+      Entry: 6
+      Data: 
+    - Name: InstancePath
+      Entry: 1
+      Data: IntermediateProperties
+    - Name: ConstantValue
+      Entry: 5
+      Data: false
+    - Name: Variable
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: FloatConditions
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.FloatCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IntConditions
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.IntCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Vector2Conditions
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.Vector2Condition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Vector3Conditions
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.Vector3Condition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: GameEventConditions
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.GameEventCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DynamicGameEventConditions
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.DynamicGameEventCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   StateMachines: []
   ValidStates: []
   InvalidStates: []
@@ -941,15 +1706,161 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 0
-    SerializedBytes: 01010e00000042006f006f006c0043006f006e0064006900740069006f006e0073002f000000000184000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0042006f006f006c0043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620000000000060100000000000000022f01000000015500000042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0042006f006f006c0043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065000100000001010f00000074006100720067006500740050006100720061006d0065007400650072002f02000000015000000042004d004c002e00530063007200690070007400610062006c0065004f0062006a0065006300740043006f00720065002e0053006300720069007000740073002e005600610072006900610062006c00650073002e0042006f006f006c005200650066006500720065006e00630065002c002000530063007200690070007400610062006c0065004f0062006a00650063007400530079007300740065006d00020000002b010b00000055007300650043006f006e007300740061006e007400002b011500000045006e00610062006c00650049006e007300740061006e00630065004f007000740069006f006e007300002d010c00000049006e007300740061006e00630065004e0061006d00650027010c00000049006e007300740061006e00630065005000610074006800011600000049006e007400650072006d00650064006900610074006500500072006f0070006500720074006900650073002b010d00000043006f006e007300740061006e007400560061006c0075006500000b01080000005600610072006900610062006c0065000000000005010105000000760061006c00750065003002000000030000002b010b00000055007300650043006f006e007300740061006e007400012b011500000045006e00610062006c00650049006e007300740061006e00630065004f007000740069006f006e007300002d010c00000049006e007300740061006e00630065004e0061006d00650027010c00000049006e007300740061006e00630065005000610074006800011600000049006e007400650072006d00650064006900610074006500500072006f0070006500720074006900650073002b010d00000043006f006e007300740061006e007400560061006c0075006500012d01080000005600610072006900610062006c0065000505070501010f00000046006c006f006100740043006f006e0064006900740069006f006e0073002f030000000185000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0046006c006f006100740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620004000000060000000000000000070501010d00000049006e00740043006f006e0064006900740069006f006e0073002f040000000183000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0049006e00740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620005000000060000000000000000070501011100000056006500630074006f007200320043006f006e0064006900740069006f006e0073002f050000000187000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0056006500630074006f007200320043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620006000000060000000000000000070501011100000056006500630074006f007200330043006f006e0064006900740069006f006e0073002f060000000187000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e0056006500630074006f007200330043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c0069006200070000000600000000000000000705010113000000470061006d0065004500760065006e00740043006f006e0064006900740069006f006e0073002f070000000189000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e00470061006d0065004500760065006e00740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c006900620008000000060000000000000000070501011a000000440079006e0061006d0069006300470061006d0065004500760065006e00740043006f006e0064006900740069006f006e0073002f080000000190000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b0042004d004c002e00560069007300750061006c00530074006100740065004d0061006300680069006e0065002e0053006300720069007000740073002e004e006f006400650073002e005400720061006e0073006900740069006f006e0043006f006e0064006900740069006f006e0073002e00440079006e0061006d0069006300470061006d0065004500760065006e00740043006f006e0064006900740069006f006e002c002000530074006100740065004d0061006300680069006e0065005d005d002c0020006d00730063006f0072006c0069006200090000000600000000000000000705
+    SerializedFormat: 2
+    SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 9be04e2f86afa4946bb74161da89b89c, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: BoolConditions
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.BoolCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.BoolCondition,
+        StateMachine
+    - Name: targetParameter
+      Entry: 7
+      Data: 2|BML.ScriptableObjectCore.Scripts.Variables.BoolReference, ScriptableObjectSystem
+    - Name: UseConstant
+      Entry: 5
+      Data: false
+    - Name: EnableInstanceOptions
+      Entry: 5
+      Data: false
+    - Name: InstanceName
+      Entry: 6
+      Data: 
+    - Name: InstancePath
+      Entry: 1
+      Data: IntermediateProperties
+    - Name: ConstantValue
+      Entry: 5
+      Data: false
+    - Name: Variable
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: value
+      Entry: 7
+      Data: 3|BML.ScriptableObjectCore.Scripts.Variables.BoolReference, ScriptableObjectSystem
+    - Name: UseConstant
+      Entry: 5
+      Data: true
+    - Name: EnableInstanceOptions
+      Entry: 5
+      Data: false
+    - Name: InstanceName
+      Entry: 6
+      Data: 
+    - Name: InstancePath
+      Entry: 1
+      Data: IntermediateProperties
+    - Name: ConstantValue
+      Entry: 5
+      Data: true
+    - Name: Variable
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: FloatConditions
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.FloatCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IntConditions
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.IntCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Vector2Conditions
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.Vector2Condition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Vector3Conditions
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.Vector3Condition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: GameEventConditions
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.GameEventCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DynamicGameEventConditions
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.DynamicGameEventCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   StateMachines: []
   ValidStates: []
   InvalidStates: []
@@ -1247,6 +2158,9 @@ GameObject:
   - component: {fileID: 8077216654754324779}
   - component: {fileID: 6477209287820175932}
   - component: {fileID: 2344026821267772347}
+  - component: {fileID: 93364880}
+  - component: {fileID: 93364881}
+  - component: {fileID: 93364883}
   m_Layer: 5
   m_Name: Canvas_Piss Gauge
   m_TagString: Untagged
@@ -1268,6 +2182,8 @@ RectTransform:
   - {fileID: 896318934986159171}
   - {fileID: 5096198467579591216}
   - {fileID: 939153624640607381}
+  - {fileID: 1082751806}
+  - {fileID: 621917360}
   m_Father: {fileID: 1717021465788997480}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1337,6 +2253,114 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 119
+--- !u!114 &93364880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3627158187682305678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafb937cf1a47f04f8d27c5e9d7e6f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 3d9c1cfe26c3cf140a63183875d07b76, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 621917359}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1082751805}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &93364881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3627158187682305678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafb937cf1a47f04f8d27c5e9d7e6f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 06e8ad2fc1fb3dd45b7b8a0bc5716a25, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 621917359}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &93364883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3627158187682305678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafb937cf1a47f04f8d27c5e9d7e6f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: d475bf0e4e96c514e8f41d75cd79c3c9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 621917359}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1082751805}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4005922588730499730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,8 +2989,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 0
-    SerializedBytes: 010109000000750069004f0062006a0065006300740073002f0000000001aa000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b00530079007300740065006d002e00560061006c00750065005400750070006c006500600032005b005b0042004d004c002e0053006300720069007000740073002e005400610073006b004d0061006e0061006700650072002b005400610073006b002c00200042004d004c002e0053006300720069007000740073005d002c005b0055006e0069007400790045006e00670069006e0065002e00470061006d0065004f0062006a006500630074002c00200055006e0069007400790045006e00670069006e0065002e0043006f00720065004d006f00640075006c0065005d005d002c0020006d00730063006f0072006c00690062005d005d002c0020006d00730063006f0072006c006900620000000000060a00000000000000042f01000000017b000000530079007300740065006d002e00560061006c00750065005400750070006c006500600032005b005b0042004d004c002e0053006300720069007000740073002e005400610073006b004d0061006e0061006700650072002b005400610073006b002c00200042004d004c002e0053006300720069007000740073005d002c005b0055006e0069007400790045006e00670069006e0065002e00470061006d0065004f0062006a006500630074002c00200055006e0069007400790045006e00670069006e0065002e0043006f00720065004d006f00640075006c0065005d005d002c0020006d00730063006f0072006c00690062001d01050000004900740065006d00310000000000000000000b01050000004900740065006d00320000000000050430010000001d01050000004900740065006d00310001000000000000000b01050000004900740065006d00320001000000050430010000001d01050000004900740065006d00310002000000000000000b01050000004900740065006d00320002000000050430010000001d01050000004900740065006d00310003000000000000000b01050000004900740065006d00320003000000050430010000001d01050000004900740065006d00310004000000000000000b01050000004900740065006d00320004000000050430010000001d01050000004900740065006d00310005000000000000000b01050000004900740065006d00320005000000050430010000001d01050000004900740065006d00310006000000000000000b01050000004900740065006d00320006000000050430010000001d01050000004900740065006d00310007000000000000000b01050000004900740065006d00320007000000050430010000001d01050000004900740065006d00310008000000000000000b01050000004900740065006d00320008000000050430010000001d01050000004900740065006d00310009000000000000000b01050000004900740065006d00320008000000050705
+    SerializedFormat: 2
+    SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 692890936330069575}
     - {fileID: 6576617124164438577}
@@ -1981,7 +3005,151 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: uiObjects
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 10
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 0
+    - Name: Item2
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 1
+    - Name: Item2
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 2
+    - Name: Item2
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 3
+    - Name: Item2
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 4
+    - Name: Item2
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 5
+    - Name: Item2
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 6
+    - Name: Item2
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 7
+    - Name: Item2
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 8
+    - Name: Item2
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 9
+    - Name: Item2
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   uiHoldingBoxController: {fileID: 3317582639206737942}
 --- !u!1 &6576617124390017697
 GameObject:
@@ -3417,8 +4585,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 0
-    SerializedBytes: 01010a0000007400610073006b0049006d0061006700650073002f0000000001a60000004d0053002e0049006e007400650072006e0061006c002e0058006d006c002e00580050006100740068002e0043006c006f006e00610062006c00650053007400610063006b00600031005b005b00530079007300740065006d002e00560061006c00750065005400750070006c006500600032005b005b0042004d004c002e0053006300720069007000740073002e005400610073006b004d0061006e0061006700650072002b005400610073006b002c00200042004d004c002e0053006300720069007000740073005d002c005b0055006e0069007400790045006e00670069006e0065002e00550049002e0049006d006100670065002c00200055006e0069007400790045006e00670069006e0065002e00550049005d005d002c0020006d00730063006f0072006c00690062005d005d002c002000530079007300740065006d002e0058006d006c0000000000060700000000000000042f010000000171000000530079007300740065006d002e00560061006c00750065005400750070006c006500600032005b005b0042004d004c002e0053006300720069007000740073002e005400610073006b004d0061006e0061006700650072002b005400610073006b002c00200042004d004c002e0053006300720069007000740073005d002c005b0055006e0069007400790045006e00670069006e0065002e00550049002e0049006d006100670065002c00200055006e0069007400790045006e00670069006e0065002e00550049005d005d002c0020006d00730063006f0072006c00690062001d01050000004900740065006d00310001000000000000000b01050000004900740065006d00320000000000050430010000001d01050000004900740065006d00310002000000000000000b01050000004900740065006d00320000000000050430010000001d01050000004900740065006d00310003000000000000000b01050000004900740065006d00320000000000050430010000001d01050000004900740065006d00310004000000000000000b01050000004900740065006d00320000000000050430010000001d01050000004900740065006d00310005000000000000000b01050000004900740065006d00320000000000050430010000001d01050000004900740065006d00310006000000000000000b01050000004900740065006d00320000000000050430010000001d01050000004900740065006d00310007000000000000000b01050000004900740065006d00320001000000050705
+    SerializedFormat: 2
+    SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 6265010048252483007}
     - {fileID: 2724483409662373672}
@@ -3426,7 +4594,111 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: taskImages
+      Entry: 7
+      Data: 0|MS.Internal.Xml.XPath.ClonableStack`1[[System.ValueTuple`2[[BML.Scripts.TaskManager+Task,
+        BML.Scripts],[UnityEngine.UI.Image, UnityEngine.UI]], mscorlib]], System.Xml
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.UI.Image,
+        UnityEngine.UI]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 1
+    - Name: Item2
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.UI.Image,
+        UnityEngine.UI]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 2
+    - Name: Item2
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.UI.Image,
+        UnityEngine.UI]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 3
+    - Name: Item2
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.UI.Image,
+        UnityEngine.UI]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 4
+    - Name: Item2
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.UI.Image,
+        UnityEngine.UI]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 5
+    - Name: Item2
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.UI.Image,
+        UnityEngine.UI]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 6
+    - Name: Item2
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.ValueTuple`2[[BML.Scripts.TaskManager+Task, BML.Scripts],[UnityEngine.UI.Image,
+        UnityEngine.UI]], mscorlib
+    - Name: Item1
+      Entry: 3
+      Data: 7
+    - Name: Item2
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1 &8712118713346827969
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,14 +5324,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
---- !u!1 &6576617124164438577 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
-  m_PrefabInstance: {fileID: 577352966232744794}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &6576617124164438576 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001043310897047914, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
+  m_PrefabInstance: {fileID: 577352966232744794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6576617124164438577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
   m_PrefabInstance: {fileID: 577352966232744794}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1922304046750133562
@@ -4251,14 +5523,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
---- !u!224 &5326236910687274064 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6001043310897047914, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
-  m_PrefabInstance: {fileID: 1922304046750133562}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5326236910687274065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
+  m_PrefabInstance: {fileID: 1922304046750133562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &5326236910687274064 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6001043310897047914, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
   m_PrefabInstance: {fileID: 1922304046750133562}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6546643664201453356
@@ -4458,14 +5730,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
---- !u!1 &692890936330069575 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
-  m_PrefabInstance: {fileID: 6546643664201453356}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &692890936330069574 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001043310897047914, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
+  m_PrefabInstance: {fileID: 6546643664201453356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &692890936330069575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
   m_PrefabInstance: {fileID: 6546643664201453356}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6576617124544422636
@@ -4808,14 +6080,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
---- !u!1 &577352965269644827 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
-  m_PrefabInstance: {fileID: 6576617124593848176}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &577352965269644826 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001043310897047914, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
+  m_PrefabInstance: {fileID: 6576617124593848176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &577352965269644827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
   m_PrefabInstance: {fileID: 6576617124593848176}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6576617124758071813
@@ -5158,14 +6430,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
---- !u!1 &577352967326985337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
-  m_PrefabInstance: {fileID: 6576617125216666898}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &577352967326985336 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001043310897047914, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
+  m_PrefabInstance: {fileID: 6576617125216666898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &577352967326985337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
   m_PrefabInstance: {fileID: 6576617125216666898}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6576617125670007457
@@ -5333,14 +6605,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
---- !u!1 &577352966337403850 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
-  m_PrefabInstance: {fileID: 6576617125670007457}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &577352966337403851 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001043310897047914, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
+  m_PrefabInstance: {fileID: 6576617125670007457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &577352966337403850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
   m_PrefabInstance: {fileID: 6576617125670007457}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6740514002885073493
@@ -5524,13 +6796,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
---- !u!1 &1066474453489316670 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
-  m_PrefabInstance: {fileID: 6740514002885073493}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1066474453489316671 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001043310897047914, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
+  m_PrefabInstance: {fileID: 6740514002885073493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1066474453489316670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001043310897047915, guid: a5dfadf20a1c64442a76792ffa943a6f, type: 3}
   m_PrefabInstance: {fileID: 6740514002885073493}
   m_PrefabAsset: {fileID: 0}
