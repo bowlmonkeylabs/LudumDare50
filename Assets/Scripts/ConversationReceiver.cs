@@ -1,6 +1,8 @@
-﻿using BML.ScriptableObjectCore.Scripts.Events;
+﻿using System.ComponentModel;
+using BML.ScriptableObjectCore.Scripts.Events;
 using BML.ScriptableObjectCore.Scripts.Variables;
 using QuantumTek.QuantumDialogue;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -20,6 +22,8 @@ namespace BML.Scripts
         [Header("Token Values")]
         [SerializeField] private IntReference CurrentQuota;
         [SerializeField] private IntReference BoxesDepositedCount;
+        [SerializeField] private GameEvent OnPissedSelf;
+        [ShowInInspector] private bool HasPissedSelf = false;
 
         private UnityEvent currentOnFinishDialogueEvent;
         public void OnEnable()
@@ -89,13 +93,24 @@ namespace BML.Scripts
             messageText = messageText.Replace("{{boxes_deposited}}", "" + BoxesDepositedCount.Value);
             if (BoxesDepositedCount.Value < CurrentQuota.Value)
             {
-                messageText = messageText.Replace("{{quota_status}}", "You failed to meet your quota. Do better this time.");
+                string quotaStatus =
+                    "You failed to meet your quota. You can be certain this will be going on your permanent record.";
+                if (HasPissedSelf)
+                {
+                    quotaStatus = "Pissed yourself again, and you didn't even make quota? We're not going to tolerate much more of this.";
+                }
+                messageText = messageText.Replace("{{quota_status}}", quotaStatus);
             }
             else
             {
-                messageText = messageText.Replace("{{quota_status}}", "You met quota. Now do it again.");
+                string quotaStatus =
+                    "Acceptable job meeting quota. Now do it again.";
+                if (HasPissedSelf)
+                {
+                    quotaStatus = "You may have pissed yourself but you crushed your quota, you should be proud. Now go get cleaned up and ready to do it again tomorrow!";
+                }
+                messageText = messageText.Replace("{{quota_status}}", quotaStatus);
             }
-
 
             return messageText;
         }
