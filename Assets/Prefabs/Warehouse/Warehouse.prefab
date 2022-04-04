@@ -5213,6 +5213,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3219400081420674274}
     m_Modifications:
+    - target: {fileID: 41967782, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 41967782, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
+    - target: {fileID: 41967783, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 41967783, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5260,22 +5268,6 @@ PrefabInstance:
     - target: {fileID: 3607330631449869089, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_Name
       value: Supervisor
-      objectReference: {fileID: 0}
-    - target: {fileID: 3607330631449869089, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3607330631449869089, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5096259627777721375, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6076865396825723649, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
