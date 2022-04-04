@@ -1,6 +1,7 @@
 ﻿using System;
 using BML.ScriptableObjectCore.Scripts.Events;
 using BML.ScriptableObjectCore.Scripts.Variables;
+using BML.Scripts.UI;
 using DefaultNamespace;
 using Sirenix.OdinInspector;
 using TMPro;
@@ -43,7 +44,7 @@ namespace BML.Scripts
 
         [Title("Product Demand")]
         [SerializeField] private ProductDemandManager ProductDemandManager;
-        
+
         [Title("Other UI Text")]
         [SerializeField] private TMP_Text TimeLeftText;
         [SerializeField] private TMP_Text QuotaText;

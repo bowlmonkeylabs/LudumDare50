@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using BML.Scripts.UI;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace BML.Scripts
 {
     public class TaskPromptManager : SerializedMonoBehaviour
     {
+        [SerializeField] private UiHoldingBoxController uiHoldingBoxController;
         [SerializeField] private List<(TaskManager.Task, GameObject)> uiObjects;
 
         private Dictionary<TaskManager.Task, GameObject> uiObjectsMap;
@@ -25,6 +27,7 @@ namespace BML.Scripts
             }
             
             uiObjectsMap[task].SetActive(true);
+            uiHoldingBoxController.UpdateTask(task);
         }
         
     }
