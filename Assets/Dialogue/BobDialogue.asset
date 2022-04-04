@@ -40,34 +40,28 @@ MonoBehaviour:
     Speaker: 0
     SpeakerName: Bob
     PreviousMessage: -1
-    NextMessage: -1
+    NextMessage: 17
     MessageText: Hey there, how were your few hours of sleep last night? Mine were
       terrific! Did you hear! They fired that slacker Rick! I'm glad too, he was
-      making us look bad. They've replaced him with a robot for now, but I'm sure
-      it's just temporary until they find a good ol' fashioned hard working American.
-      See you on the floor!
+      making us look bad.
     Clip: {fileID: 0}
   - ID: 3
     Speaker: 0
     SpeakerName: Bob
     PreviousMessage: -1
-    NextMessage: -1
+    NextMessage: 16
     MessageText: Hey there, I'm Bob, I'm new here as well. Gosh, isn't this great,
       this seems like a great place to work. Simple unending reptetitive tasks, now
-      that's the job for me! Just need to grab Boxes, fill em up and put em on the
-      conveyor! This is going to be great, I'm sure all those horror stories about
-      piss bottles and robots aren't true.
+      that's the job for me!
     Clip: {fileID: 0}
   - ID: 9
     Speaker: 0
     SpeakerName: Bob
     PreviousMessage: -1
-    NextMessage: -1
+    NextMessage: 18
     MessageText: Hey there, what a great day today is! Phew, I'm beat, working hard
       the last couple days. Good for the soul though. Lucky we have this Regular
-      Gum around, keeps me on my feet! The second dispenser's in stock again too!
-      Thank goodness that they replaced Aric, it seems like he was single-handedly
-      keeping it out of stock! Haopy Working!
+      Gum around, keeps me on my feet!
     Clip: {fileID: 0}
   - ID: 14
     Speaker: 12
@@ -82,5 +76,32 @@ MonoBehaviour:
     PreviousMessage: -1
     NextMessage: -1
     MessageText: Beep boop
+    Clip: {fileID: 0}
+  - ID: 16
+    Speaker: 0
+    SpeakerName: Bob
+    PreviousMessage: 3
+    NextMessage: -1
+    MessageText: Just need to grab Boxes, fill em up and put em on the conveyor!
+      This is going to be great, I'm sure all those horror stories about piss bottles
+      and robots aren't true.
+    Clip: {fileID: 0}
+  - ID: 17
+    Speaker: 0
+    SpeakerName: Bob
+    PreviousMessage: 2
+    NextMessage: -1
+    MessageText: They've replaced him with a robot for now, but I'm sure it's just
+      temporary until they find a good ol' fashioned hard working Ymerican. See you
+      on the floor!
+    Clip: {fileID: 0}
+  - ID: 18
+    Speaker: 0
+    SpeakerName: Bob
+    PreviousMessage: 9
+    NextMessage: -1
+    MessageText: ' The second dispenser''s in stock again too! Thank goodness that
+      they replaced Aric, it seems like he was single-handedly keeping it out of
+      stock! Have a terrific day!'
     Clip: {fileID: 0}
   Choices: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BobDialogueDB
   m_EditorClassIdentifier: 
   DataDB: {fileID: 11400000, guid: 06af85f713795c24b9c1bdf50bc78e5e, type: 2}
-  NextID: 16
+  NextID: 19
   Nodes:
   - ID: 0
     Type: 2
@@ -76,16 +76,18 @@ MonoBehaviour:
       Y: 7.5
       AllowMultipleConnections: 1
       Connections:
-        keys: 
-        values: []
+        keys: 11000000
+        values:
+        - Array: 00000000
     - ID: 1
       Name: Next
       Type: 1
       Y: 35
       AllowMultipleConnections: 0
       Connections:
-        keys: 
-        values: []
+        keys: 11000000
+        values:
+        - Array: 01000000
     AllowedInputs:
     - InputType: 3
       InputID: 0
@@ -170,16 +172,18 @@ MonoBehaviour:
       Y: 7.5
       AllowMultipleConnections: 1
       Connections:
-        keys: 
-        values: []
+        keys: 10000000
+        values:
+        - Array: 00000000
     - ID: 1
       Name: Next
       Type: 1
       Y: 35
       AllowMultipleConnections: 0
       Connections:
-        keys: 
-        values: []
+        keys: 10000000
+        values:
+        - Array: 01000000
     AllowedInputs:
     - InputType: 3
       InputID: 0
@@ -339,16 +343,18 @@ MonoBehaviour:
       Y: 7.5
       AllowMultipleConnections: 1
       Connections:
-        keys: 
-        values: []
+        keys: 12000000
+        values:
+        - Array: 00000000
     - ID: 1
       Name: Next
       Type: 1
       Y: 35
       AllowMultipleConnections: 0
       Connections:
-        keys: 
-        values: []
+        keys: 12000000
+        values:
+        - Array: 01000000
     AllowedInputs:
     - InputType: 3
       InputID: 0
@@ -663,6 +669,288 @@ MonoBehaviour:
       InputID: 5
       OutputType: 3
       OutputID: 1
+  - ID: 16
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 1473
+      y: 43
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 03000000
+        values:
+        - Array: 00000000
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 03000000
+        values:
+        - Array: 01000000
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+  - ID: 17
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 1496
+      y: 241
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 02000000
+        values:
+        - Array: 00000000
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 02000000
+        values:
+        - Array: 01000000
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+  - ID: 18
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 1497
+      y: 439
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 09000000
+        values:
+        - Array: 00000000
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 09000000
+        values:
+        - Array: 01000000
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
   SpeakerNodes:
   - ID: 0
     Type: 2
@@ -818,12 +1106,10 @@ MonoBehaviour:
       Speaker: 0
       SpeakerName: Bob
       PreviousMessage: -1
-      NextMessage: -1
+      NextMessage: 17
       MessageText: Hey there, how were your few hours of sleep last night? Mine were
         terrific! Did you hear! They fired that slacker Rick! I'm glad too, he was
-        making us look bad. They've replaced him with a robot for now, but I'm sure
-        it's just temporary until they find a good ol' fashioned hard working American.
-        See you on the floor!
+        making us look bad.
       Clip: {fileID: 0}
   - ID: 3
     Type: 3
@@ -922,13 +1208,10 @@ MonoBehaviour:
       Speaker: 0
       SpeakerName: Bob
       PreviousMessage: -1
-      NextMessage: -1
+      NextMessage: 16
       MessageText: Hey there, I'm Bob, I'm new here as well. Gosh, isn't this great,
         this seems like a great place to work. Simple unending reptetitive tasks,
-        now that's the job for me! And ignore any horror stories  you've heard about
-        having to pee in bottles to meet quota, I've had no problems so far!  Why
-        back in my day, I used to have to... *confused nostalgic rambling goes on
-        for several minutes*
+        now that's the job for me!
       Clip: {fileID: 0}
   - ID: 9
     Type: 3
@@ -1027,12 +1310,10 @@ MonoBehaviour:
       Speaker: 0
       SpeakerName: Bob
       PreviousMessage: -1
-      NextMessage: -1
+      NextMessage: 18
       MessageText: Hey there, what a great day today is! Phew, I'm beat, working
         hard the last couple days. Good for the soul though. Lucky we have this Regular
-        Gum around, keeps me on my feet! The second dispenser's in stock again too!
-        Thank goodness that they replaced Aric, it seems like he was single-handedly
-        keeping it out of stock! Have a terrific day!
+        Gum around, keeps me on my feet!
       Clip: {fileID: 0}
   - ID: 14
     Type: 3
@@ -1233,6 +1514,312 @@ MonoBehaviour:
       PreviousMessage: -1
       NextMessage: -1
       MessageText: Beep boop
+      Clip: {fileID: 0}
+  - ID: 16
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+    Data:
+      ID: 16
+      Speaker: 0
+      SpeakerName: Bob
+      PreviousMessage: 3
+      NextMessage: -1
+      MessageText: Just need to grab Boxes, fill em up and put em on the conveyor!
+        This is going to be great, I'm sure all those horror stories about piss bottles
+        and robots aren't true.
+      Clip: {fileID: 0}
+  - ID: 17
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+    Data:
+      ID: 17
+      Speaker: 0
+      SpeakerName: Bob
+      PreviousMessage: 2
+      NextMessage: -1
+      MessageText: They've replaced him with a robot for now, but I'm sure it's just
+        temporary until they find a good ol' fashioned hard working American. See
+        you on the floor!
+      Clip: {fileID: 0}
+  - ID: 18
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+    Data:
+      ID: 18
+      Speaker: 0
+      SpeakerName: Bob
+      PreviousMessage: 9
+      NextMessage: -1
+      MessageText: ' The second dispenser''s in stock again too! Thank goodness that
+        they replaced Aric, it seems like he was single-handedly keeping it out of
+        stock! Have a terrific day!'
       Clip: {fileID: 0}
   ConversationNodes:
   - ID: 5

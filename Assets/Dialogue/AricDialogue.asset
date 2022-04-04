@@ -41,9 +41,9 @@ MonoBehaviour:
     SpeakerName: Aric
     PreviousMessage: -1
     NextMessage: -1
-    MessageText: Heytherehowsitgoing?! What? Nah dude I'm fine, just having some
-      Regular Gum to keep me going, gotta meet quota. This stuff's great! The second
-      dispenser is always out of stock though for some reason...
+    MessageText: Heymanhowsitgoing?! What? Nah man I'm fine, just having some Regular
+      Gum to keep me going, gotta meet quota. This stuff's great! The second dispenser
+      is always out of stock for some reason though...
     Clip: {fileID: 0}
   - ID: 10
     Speaker: 5
