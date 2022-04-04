@@ -24,18 +24,8 @@ namespace DefaultNamespace
         [SerializeField] private LeanTweenType TextFadeInEase = LeanTweenType.easeInCubic;
         [SerializeField] private LeanTweenType TextFadeOutEase = LeanTweenType.easeOutCubic;
 
-        public void StartFinishTransition()
-        {
-            FadeToBlackImage.gameObject.SetActive(true);
-            
-            LTDescr fadeToBlackTween = LeanTween.value(1f, 0f, FadeToBlackTime);
-            fadeToBlackTween.setEase(FadeFromBlackEase);
-            fadeToBlackTween.setOnUpdate(t =>
-            {
-                FadeToBlackImage.color = new Color(0f, 0f, 0f, t);
-            });
-        }
-
+        
+        //END of day
         public void StartTransiton()
         {
             IsDayTransitioning.Value = true;
@@ -53,9 +43,28 @@ namespace DefaultNamespace
             {
                 FadeToBlackImage.color = new Color(0f, 0f, 0f, t);
             });
-            fadeToBlackTween.setOnComplete(FadeInCurrentDayText);
+            fadeToBlackTween.setOnComplete(() =>
+            {
+                SceneManager.LoadScene(SceneToLoad);
+            });
         }
+        
+        
+        //Start of day
+        public void StartFinishTransition()
+        {
+            IsDayTransitioning.Value = true;
+            CurrentDayText.text = WeekDayList[CurrentDay.Value];
+            FadeToBlackImage.gameObject.SetActive(true);
 
+            //If not break room, just fade from black
+            //Otherwise show text day of week too
+            if (SceneManager.GetActiveScene().name != SceneToLoad)
+                FadeFromBlack();
+            else
+                FadeInCurrentDayText();
+        }
+        
         private void FadeInCurrentDayText()
         {
             CurrentDayText.gameObject.SetActive(true);
@@ -82,10 +91,22 @@ namespace DefaultNamespace
             {
                 CurrentDayText.color = new Color(1f, 1f, 1f, t);
             });
-            fadeOutCurrentDayTween.setOnComplete(_ =>
+            fadeOutCurrentDayTween.setOnComplete(FadeFromBlack);
+        }
+        
+        private void FadeFromBlack()
+        {
+            FadeToBlackImage.gameObject.SetActive(true);
+            
+            LTDescr fadeToBlackTween = LeanTween.value(1f, 0f, FadeToBlackTime);
+            fadeToBlackTween.setEase(FadeToBlackEase);
+            fadeToBlackTween.setOnUpdate(t =>
+            {
+                FadeToBlackImage.color = new Color(0f, 0f, 0f, t);
+            });
+            fadeToBlackTween.setOnComplete(() =>
             {
                 IsDayTransitioning.Value = false;
-                SceneManager.LoadScene(SceneToLoad);
             });
         }
     }

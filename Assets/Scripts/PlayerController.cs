@@ -91,8 +91,10 @@ namespace BML.Scripts
 
         public void OnInteract()
         {
+            if (IsDayTransitioning.Value) return;
+            
             //Continue dialogue if currently in conversation
-            if (IsConversationActive.Value || IsDayTransitioning.Value)
+            if (IsConversationActive.Value)
             {
                 onContinueDialogue.Raise();
                 return;
