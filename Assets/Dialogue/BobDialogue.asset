@@ -15,13 +15,13 @@ MonoBehaviour:
   Conversations:
   - ID: 5
     Name: Day0
-    FirstMessage: 3
+    FirstMessage: 19
   - ID: 6
     Name: Day1
-    FirstMessage: 2
+    FirstMessage: 20
   - ID: 7
     Name: Day2
-    FirstMessage: 9
+    FirstMessage: 21
   - ID: 11
     Name: Day3
     FirstMessage: 14
@@ -39,29 +39,29 @@ MonoBehaviour:
   - ID: 2
     Speaker: 0
     SpeakerName: Bob
-    PreviousMessage: -1
+    PreviousMessage: 20
     NextMessage: 17
-    MessageText: Hey there, how were your few hours of sleep last night? Mine were
-      terrific! Did you hear! They fired that slacker Rick! I'm glad too, he was
-      making us look bad.
+    MessageText: How were your few hours of sleep last night? Mine were terrific!
+      Did you hear! They fired that slacker Rick! I'm glad too, he was making us
+      look bad.
     Clip: {fileID: 0}
   - ID: 3
     Speaker: 0
     SpeakerName: Bob
-    PreviousMessage: -1
+    PreviousMessage: 19
     NextMessage: 16
-    MessageText: Hey there, I'm Bob, I'm new here as well. Gosh, isn't this great,
-      this seems like a great place to work. Simple unending reptetitive tasks, now
-      that's the job for me!
+    MessageText: I'm Bob, I'm new here as well. Gosh, isn't this great, this seems
+      like a great place to work. Simple unending reptetitive tasks, now that's the
+      job for me!
     Clip: {fileID: 0}
   - ID: 9
     Speaker: 0
     SpeakerName: Bob
-    PreviousMessage: -1
+    PreviousMessage: 21
     NextMessage: 18
-    MessageText: Hey there, what a great day today is! Phew, I'm beat, working hard
-      the last couple days. Good for the soul though. Lucky we have this Regular
-      Gum around, keeps me on my feet!
+    MessageText: What a great day today is! Phew, I'm beat, working hard the last
+      couple days. Good for the soul though. Lucky we have this Regular Gum around,
+      keeps me on my feet!
     Clip: {fileID: 0}
   - ID: 14
     Speaker: 12
@@ -103,5 +103,26 @@ MonoBehaviour:
     MessageText: ' The second dispenser''s in stock again too! Thank goodness that
       they replaced Aric, it seems like he was single-handedly keeping it out of
       stock! Have a terrific day!'
+    Clip: {fileID: 0}
+  - ID: 19
+    Speaker: 0
+    SpeakerName: Bob
+    PreviousMessage: -1
+    NextMessage: 3
+    MessageText: Hey there!
+    Clip: {fileID: 0}
+  - ID: 20
+    Speaker: 0
+    SpeakerName: Bob
+    PreviousMessage: -1
+    NextMessage: 2
+    MessageText: Hey there!
+    Clip: {fileID: 0}
+  - ID: 21
+    Speaker: 0
+    SpeakerName: Bob
+    PreviousMessage: -1
+    NextMessage: 9
+    MessageText: Hey there!
     Clip: {fileID: 0}
   Choices: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BobDialogueDB
   m_EditorClassIdentifier: 
   DataDB: {fileID: 11400000, guid: 06af85f713795c24b9c1bdf50bc78e5e, type: 2}
-  NextID: 19
+  NextID: 23
   Nodes:
   - ID: 0
     Type: 2
@@ -31,7 +31,7 @@ MonoBehaviour:
       Y: 40
       AllowMultipleConnections: 1
       Connections:
-        keys: 020000000300000009000000
+        keys: 140000001300000015000000
         values:
         - Array: 00000000
         - Array: 00000000
@@ -46,8 +46,8 @@ MonoBehaviour:
     Type: 3
     Window:
       serializedVersion: 2
-      x: 1161
-      y: 231
+      x: 1455
+      y: 238
       width: 200
       height: 175
     Inputs:
@@ -57,7 +57,7 @@ MonoBehaviour:
       Y: 7.5
       AllowMultipleConnections: 0
       Connections:
-        keys: 00000000
+        keys: 14000000
         values:
         - Array: 00000000
     - ID: 1
@@ -66,9 +66,9 @@ MonoBehaviour:
       Y: 35
       AllowMultipleConnections: 0
       Connections:
-        keys: 06000000
+        keys: 14000000
         values:
-        - Array: 00000000
+        - Array: 01000000
     Outputs:
     - ID: 0
       Name: Speaker
@@ -142,7 +142,7 @@ MonoBehaviour:
     Type: 3
     Window:
       serializedVersion: 2
-      x: 1146
+      x: 1462
       y: 39
       width: 200
       height: 175
@@ -153,7 +153,7 @@ MonoBehaviour:
       Y: 7.5
       AllowMultipleConnections: 0
       Connections:
-        keys: 00000000
+        keys: 13000000
         values:
         - Array: 00000000
     - ID: 1
@@ -162,9 +162,9 @@ MonoBehaviour:
       Y: 35
       AllowMultipleConnections: 0
       Connections:
-        keys: 05000000
+        keys: 13000000
         values:
-        - Array: 00000000
+        - Array: 01000000
     Outputs:
     - ID: 0
       Name: Speaker
@@ -250,7 +250,7 @@ MonoBehaviour:
       Y: 40
       AllowMultipleConnections: 0
       Connections:
-        keys: 03000000
+        keys: 13000000
         values:
         - Array: 01000000
     AllowedInputs: []
@@ -275,7 +275,7 @@ MonoBehaviour:
       Y: 40
       AllowMultipleConnections: 0
       Connections:
-        keys: 02000000
+        keys: 14000000
         values:
         - Array: 01000000
     AllowedInputs: []
@@ -300,7 +300,7 @@ MonoBehaviour:
       Y: 40
       AllowMultipleConnections: 0
       Connections:
-        keys: 09000000
+        keys: 15000000
         values:
         - Array: 01000000
     AllowedInputs: []
@@ -313,8 +313,8 @@ MonoBehaviour:
     Type: 3
     Window:
       serializedVersion: 2
-      x: 1155
-      y: 425
+      x: 1479
+      y: 458
       width: 200
       height: 175
     Inputs:
@@ -324,7 +324,7 @@ MonoBehaviour:
       Y: 7.5
       AllowMultipleConnections: 0
       Connections:
-        keys: 00000000
+        keys: 15000000
         values:
         - Array: 00000000
     - ID: 1
@@ -333,9 +333,9 @@ MonoBehaviour:
       Y: 35
       AllowMultipleConnections: 0
       Connections:
-        keys: 07000000
+        keys: 15000000
         values:
-        - Array: 00000000
+        - Array: 01000000
     Outputs:
     - ID: 0
       Name: Speaker
@@ -485,8 +485,8 @@ MonoBehaviour:
     Type: 3
     Window:
       serializedVersion: 2
-      x: 1151
-      y: 611
+      x: 1168
+      y: 685
       width: 200
       height: 175
     Inputs:
@@ -579,8 +579,8 @@ MonoBehaviour:
     Type: 3
     Window:
       serializedVersion: 2
-      x: 1154
-      y: 806
+      x: 1168
+      y: 899
       width: 200
       height: 175
     Inputs:
@@ -673,8 +673,8 @@ MonoBehaviour:
     Type: 3
     Window:
       serializedVersion: 2
-      x: 1473
-      y: 43
+      x: 1804
+      y: 38
       width: 200
       height: 175
     Inputs:
@@ -767,8 +767,8 @@ MonoBehaviour:
     Type: 3
     Window:
       serializedVersion: 2
-      x: 1496
-      y: 241
+      x: 1822
+      y: 226
       width: 200
       height: 175
     Inputs:
@@ -861,8 +861,8 @@ MonoBehaviour:
     Type: 3
     Window:
       serializedVersion: 2
-      x: 1497
-      y: 439
+      x: 1809
+      y: 454
       width: 200
       height: 175
     Inputs:
@@ -901,6 +901,294 @@ MonoBehaviour:
       Connections:
         keys: 
         values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+  - ID: 19
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 1125
+      y: 44
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 00000000
+        values:
+        - Array: 00000000
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 05000000
+        values:
+        - Array: 00000000
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 03000000
+        values:
+        - Array: 00000000
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 03000000
+        values:
+        - Array: 01000000
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+  - ID: 20
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 1121
+      y: 255
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 00000000
+        values:
+        - Array: 00000000
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 06000000
+        values:
+        - Array: 00000000
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 02000000
+        values:
+        - Array: 00000000
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 02000000
+        values:
+        - Array: 01000000
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+  - ID: 21
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 1121
+      y: 461
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 00000000
+        values:
+        - Array: 00000000
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 07000000
+        values:
+        - Array: 00000000
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 09000000
+        values:
+        - Array: 00000000
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 09000000
+        values:
+        - Array: 01000000
     AllowedInputs:
     - InputType: 3
       InputID: 0
@@ -1105,11 +1393,11 @@ MonoBehaviour:
       ID: 2
       Speaker: 0
       SpeakerName: Bob
-      PreviousMessage: -1
+      PreviousMessage: 20
       NextMessage: 17
-      MessageText: Hey there, how were your few hours of sleep last night? Mine were
-        terrific! Did you hear! They fired that slacker Rick! I'm glad too, he was
-        making us look bad.
+      MessageText: How were your few hours of sleep last night? Mine were terrific!
+        Did you hear! They fired that slacker Rick! I'm glad too, he was making us
+        look bad.
       Clip: {fileID: 0}
   - ID: 3
     Type: 3
@@ -1207,11 +1495,11 @@ MonoBehaviour:
       ID: 3
       Speaker: 0
       SpeakerName: Bob
-      PreviousMessage: -1
+      PreviousMessage: 19
       NextMessage: 16
-      MessageText: Hey there, I'm Bob, I'm new here as well. Gosh, isn't this great,
-        this seems like a great place to work. Simple unending reptetitive tasks,
-        now that's the job for me!
+      MessageText: I'm Bob, I'm new here as well. Gosh, isn't this great, this seems
+        like a great place to work. Simple unending reptetitive tasks, now that's
+        the job for me!
       Clip: {fileID: 0}
   - ID: 9
     Type: 3
@@ -1309,11 +1597,11 @@ MonoBehaviour:
       ID: 9
       Speaker: 0
       SpeakerName: Bob
-      PreviousMessage: -1
+      PreviousMessage: 21
       NextMessage: 18
-      MessageText: Hey there, what a great day today is! Phew, I'm beat, working
-        hard the last couple days. Good for the soul though. Lucky we have this Regular
-        Gum around, keeps me on my feet!
+      MessageText: What a great day today is! Phew, I'm beat, working hard the last
+        couple days. Good for the soul though. Lucky we have this Regular Gum around,
+        keeps me on my feet!
       Clip: {fileID: 0}
   - ID: 14
     Type: 3
@@ -1821,6 +2109,306 @@ MonoBehaviour:
         they replaced Aric, it seems like he was single-handedly keeping it out of
         stock! Have a terrific day!'
       Clip: {fileID: 0}
+  - ID: 19
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+    Data:
+      ID: 19
+      Speaker: 0
+      SpeakerName: Bob
+      PreviousMessage: -1
+      NextMessage: 3
+      MessageText: Hey there!
+      Clip: {fileID: 0}
+  - ID: 20
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+    Data:
+      ID: 20
+      Speaker: 0
+      SpeakerName: Bob
+      PreviousMessage: -1
+      NextMessage: 2
+      MessageText: Hey there!
+      Clip: {fileID: 0}
+  - ID: 21
+    Type: 3
+    Window:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 200
+      height: 175
+    Inputs:
+    - ID: 0
+      Name: Speaker
+      Type: 0
+      Y: 7.5
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Previous
+      Type: 0
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    Outputs:
+    - ID: 0
+      Name: Speaker
+      Type: 1
+      Y: 7.5
+      AllowMultipleConnections: 1
+      Connections:
+        keys: 
+        values: []
+    - ID: 1
+      Name: Next
+      Type: 1
+      Y: 35
+      AllowMultipleConnections: 0
+      Connections:
+        keys: 
+        values: []
+    AllowedInputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 2
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 3
+      InputID: 1
+      OutputType: 1
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 4
+      OutputID: 0
+    AllowedOutputs:
+    - InputType: 3
+      InputID: 0
+      OutputType: 3
+      OutputID: 0
+    - InputType: 3
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 0
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 1
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 2
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 3
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 4
+      OutputType: 3
+      OutputID: 1
+    - InputType: 4
+      InputID: 5
+      OutputType: 3
+      OutputID: 1
+    Data:
+      ID: 21
+      Speaker: 0
+      SpeakerName: Bob
+      PreviousMessage: -1
+      NextMessage: 9
+      MessageText: Hey there!
+      Clip: {fileID: 0}
   ConversationNodes:
   - ID: 5
     Type: 1
@@ -1849,7 +2437,7 @@ MonoBehaviour:
     Data:
       ID: 5
       Name: Day0
-      FirstMessage: 3
+      FirstMessage: 19
   - ID: 6
     Type: 1
     Window:
@@ -1877,7 +2465,7 @@ MonoBehaviour:
     Data:
       ID: 6
       Name: Day1
-      FirstMessage: 2
+      FirstMessage: 20
   - ID: 7
     Type: 1
     Window:
@@ -1905,7 +2493,7 @@ MonoBehaviour:
     Data:
       ID: 7
       Name: Day2
-      FirstMessage: 9
+      FirstMessage: 21
   - ID: 11
     Type: 1
     Window:
