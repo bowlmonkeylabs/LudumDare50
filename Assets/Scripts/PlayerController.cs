@@ -16,6 +16,7 @@ namespace BML.Scripts
         [SerializeField] private BoolReference IsHoverTextOpen;
         [SerializeField] private BoolReference IsDayTransitioning;
         [SerializeField] private BoolReference HasPissBottle;
+        [SerializeField] private BoolReference  IsCaffeinated;
         [SerializeField] private FloatReference currentPissAmount;
         [SerializeField] private FloatReference maxPissAmount;
         [SerializeField] private FloatReference rateOfPissPerSecond;
@@ -37,7 +38,7 @@ namespace BML.Scripts
         [SerializeField] private TMP_Text HoverText;
 
         private bool havePissedYourself;
-        private bool isCaffeinated;
+        
         private float originalMoveSpeed;
         private bool isPissHigh;
 
@@ -47,7 +48,7 @@ namespace BML.Scripts
             caffeineTimer.SubscribeFinished(DisableCaffeine);
             originalMoveSpeed = firstPersonController.MoveSpeed;
             currentPissAmount.Value = 0f;
-            isCaffeinated = false;
+            IsCaffeinated.Value = false;
             onGetPissBottle.Subscribe(OnGetPissBottle);
             maxPissAmount.Reset();
         }
@@ -153,18 +154,16 @@ namespace BML.Scripts
 
         private void TryConsumeCaffeine()
         {
-            if (!isRoundStarted.Value) return;
-
-            isCaffeinated = true;
+            IsCaffeinated.Value = true;
             caffeineTimer.RestartTimer();
             firstPersonController.MoveSpeed = originalMoveSpeed * caffeineSpeedMult.Value;
-            currentPissAmount.Value += caffeineIncreasePissAmount.Value;
+            if (isRoundStarted.Value) currentPissAmount.Value += caffeineIncreasePissAmount.Value;
         }
 
         private void DisableCaffeine()
         {
             firstPersonController.MoveSpeed = originalMoveSpeed;
-            isCaffeinated = false;
+            IsCaffeinated.Value = false;
         }
 
         private void OnGetPissBottle()
