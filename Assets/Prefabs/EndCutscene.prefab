@@ -309,8 +309,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndGameText: {fileID: 0}
   FadeToBlackImage: {fileID: 0}
-  FadeToBlackTime: 7
-  FadeTextTime: 4
+  FadeToBlackTime: 5
+  FadeTextTime: 2
   FadeToBlackEase: 9
   FadeFromBlackEase: 8
   TextFadeInEase: 5
