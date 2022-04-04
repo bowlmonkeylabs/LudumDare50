@@ -1942,6 +1942,7 @@ MonoBehaviour:
   OnGrabProductE: {fileID: 11400000, guid: e9dcba42cf125c942ba8ffdcc60822d0, type: 2}
   OnGrabProductF: {fileID: 11400000, guid: 7e1f259cd967f9343af065e8305cbe34, type: 2}
   OnDepositBox: {fileID: 11400000, guid: af798d2931ec4ad4fb2de166680d9d21, type: 2}
+  OnDepositBoxSuccess: {fileID: 11400000, guid: e7cef0069fe5683449657cd24c09bc0e, type: 2}
   OnTalkToSupervisor: {fileID: 11400000, guid: bd2f9071cac0917418e5e1de6951ca0c, type: 2}
   OnPissYourself: {fileID: 11400000, guid: c1b2c344986a56e479e5216fb4254828, type: 2}
   TaskPromptManager: {fileID: 1305344284}
@@ -2066,10 +2067,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1376638359, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 458296125945253769, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2134,10 +2131,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas Parent
       objectReference: {fileID: 0}
-    - target: {fileID: 1717021466649345867, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
-      propertyPath: uiHoldingBoxController
-      value: 
-      objectReference: {fileID: 2042547494}
     - target: {fileID: 1717021466649345867, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -2276,10 +2269,6 @@ PrefabInstance:
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[8]
       value: 
       objectReference: {fileID: 693912341}
-    - target: {fileID: 2259242842050439514, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2407821907644117455, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2445,10 +2434,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5716655452345496759, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6520687748208862408, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3298,17 +3283,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1066474453489316670, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
   m_PrefabInstance: {fileID: 1273997392}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2042547494 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3317582639206737942, guid: dfa01935c89571d46af9e02c710119e1, type: 3}
-  m_PrefabInstance: {fileID: 1273997392}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e766a509b241ce9691cc111429ac6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2083367962
 GameObject:
   m_ObjectHideFlags: 0

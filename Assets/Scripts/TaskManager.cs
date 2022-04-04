@@ -36,6 +36,7 @@ namespace BML.Scripts
         [SerializeField] private GameEvent OnGrabProductE;
         [SerializeField] private GameEvent OnGrabProductF;
         [SerializeField] private GameEvent OnDepositBox;
+        [SerializeField] private GameEvent OnDepositBoxSuccess;
         [SerializeField] private GameEvent OnTalkToSupervisor;
         [SerializeField] private GameEvent OnPissYourself;
 
@@ -157,6 +158,7 @@ namespace BML.Scripts
             TaskPromptManager.SetPrompt(CurrentTask);
             BoxesDepositedCount.Value++;
             Debug.Log($"Deposited Box #{BoxesDepositedCount.Value}");
+            OnDepositBoxSuccess.Raise();
         }
 
         private void TimerComplete()

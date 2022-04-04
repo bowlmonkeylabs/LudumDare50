@@ -721,7 +721,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   mainCamera: {fileID: 8990894633311890267}
-  interactDistance: 10
+  interactDistance: 5
   hoverDistance: 1
   onPissYourself: {fileID: 11400000, guid: c1b2c344986a56e479e5216fb4254828, type: 2}
   onConsumeCaffeine: {fileID: 11400000, guid: 1a31693f858c73249b1cf3e6a11699cc, type: 2}
