@@ -25,6 +25,7 @@ namespace BML.Scripts
         [SerializeField] private IntReference CurrentDay;
         [SerializeField] private FloatReference CurrentPissAmount;
         [SerializeField] private BoolReference IsRoundStarted;
+        [SerializeField] private BoolReference IsTaskTalkToSupervisor;
         [SerializeField] private string BreakRoomSceneName = "BreakRoom";
         [SerializeField] private CurveVariable QuotaCurve;
 
@@ -128,6 +129,8 @@ namespace BML.Scripts
             TimeLeftText.text = TimeLeftTextPrefix + Mathf.CeilToInt(DayTimer.RemainingTime ?? 0);
             BoxesDepositedText.text = BoxesDepositedTextPrefix + BoxesDepositedCount.Value;
             PissAmountText.text = PissAmountPrefix + Mathf.Floor(CurrentPissAmount.Value);
+            IsTaskTalkToSupervisor.Value = (CurrentTask == Task.TalkToSupervisorEndGame ||
+                                           CurrentTask == Task.TalkToSupervisorStartGame);
 
             if (!isTimeLow && DayTimer.ElapsedTime / DayTimer.Duration > lowerTimePercent)
             {
