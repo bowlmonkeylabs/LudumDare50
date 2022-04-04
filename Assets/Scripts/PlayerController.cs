@@ -137,7 +137,7 @@ namespace BML.Scripts
 
         private void TryConsumeCaffeine()
         {
-            if (isCaffeinated || !isRoundStarted.Value) return;
+            if (!isRoundStarted.Value) return;
 
             isCaffeinated = true;
             caffeineTimer.RestartTimer();
