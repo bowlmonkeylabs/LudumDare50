@@ -12,7 +12,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc788fe28a1947c5906bf24c0472406, type: 3}
   m_Name: AricDialogue
   m_EditorClassIdentifier: 
-  Conversations: []
-  Speakers: []
-  Messages: []
+  Conversations:
+  - ID: 6
+    Name: Day0
+    FirstMessage: 9
+  - ID: 7
+    Name: Day1
+    FirstMessage: 10
+  - ID: 12
+    Name: Day2
+    FirstMessage: 15
+  - ID: 13
+    Name: Day3
+    FirstMessage: 17
+  - ID: 14
+    Name: Day4
+    FirstMessage: 18
+  Speakers:
+  - ID: 5
+    Name: Aric
+    Icon: {fileID: 0}
+  - ID: 19
+    Name: AricBot
+    Icon: {fileID: 0}
+  Messages:
+  - ID: 9
+    Speaker: 5
+    SpeakerName: Aric
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Heytherehowsitgoing?! What? Nah dude I'm fine, just having some
+      Regular Gum to keep me going, gotta meet quota. This stuff's great! The second
+      dispenser is always out of stock though for some reason...
+    Clip: {fileID: 0}
+  - ID: 10
+    Speaker: 5
+    SpeakerName: Aric
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Hey man, do you have any extra Regular Gum? No matter how much I
+      have, it doesn't seem to do anything, and I really have to meet quota. Maybe
+      I should cut back... can't if I want to meet quota though.
+    Clip: {fileID: 0}
+  - ID: 15
+    Speaker: 19
+    SpeakerName: AricBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
+    Clip: {fileID: 0}
+  - ID: 17
+    Speaker: 19
+    SpeakerName: AricBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
+    Clip: {fileID: 0}
+  - ID: 18
+    Speaker: 19
+    SpeakerName: AricBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
+    Clip: {fileID: 0}
   Choices: []

@@ -87,6 +87,15 @@ namespace BML.Scripts
             var messageText = message.MessageText;
             messageText = messageText.Replace("{{current_quota}}", "" + CurrentQuota.Value);
             messageText = messageText.Replace("{{boxes_deposited}}", "" + BoxesDepositedCount.Value);
+            if (BoxesDepositedCount.Value < CurrentQuota.Value)
+            {
+                messageText = messageText.Replace("{{quota_status}}", "You failed to meet your quota. Do better this time.");
+            }
+            else
+            {
+                messageText = messageText.Replace("{{quota_status}}", "You met quota. Now do it again.");
+            }
+
 
             return messageText;
         }

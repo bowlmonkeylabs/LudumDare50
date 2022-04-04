@@ -13,26 +13,75 @@ MonoBehaviour:
   m_Name: BobDialogue
   m_EditorClassIdentifier: 
   Conversations:
-  - ID: 1
-    Name: Meet with Bob
+  - ID: 5
+    Name: Day0
+    FirstMessage: 3
+  - ID: 6
+    Name: Day1
     FirstMessage: 2
+  - ID: 7
+    Name: Day2
+    FirstMessage: 9
+  - ID: 11
+    Name: Day3
+    FirstMessage: 14
+  - ID: 13
+    Name: Day4
+    FirstMessage: 15
   Speakers:
   - ID: 0
     Name: Bob
+    Icon: {fileID: 0}
+  - ID: 12
+    Name: BobBot
     Icon: {fileID: 0}
   Messages:
   - ID: 2
     Speaker: 0
     SpeakerName: Bob
     PreviousMessage: -1
-    NextMessage: 3
-    MessageText: Greetings, I am Bob.
+    NextMessage: -1
+    MessageText: Hey there, how were your few hours of sleep last night? Mine were
+      terrific! Did you hear! They fired that slacker Rick! I'm glad too, he was
+      making us look bad. They've replaced him with a robot for now, but I'm sure
+      it's just temporary until they find a good ol' fashioned hard working American.
+      See you on the floor!
     Clip: {fileID: 0}
   - ID: 3
     Speaker: 0
     SpeakerName: Bob
-    PreviousMessage: 2
+    PreviousMessage: -1
     NextMessage: -1
-    MessageText: I am still Bob
+    MessageText: Hey there, I'm Bob, I'm new here as well. Gosh, isn't this great,
+      this seems like a great place to work. Simple unending reptetitive tasks, now
+      that's the job for me! And ignore any horror stories  you've heard about having
+      to pee in bottles to meet quota, I've had no problems so far!  Why back in
+      my day, I used to have to... *confused nostalgic rambling goes on for several
+      minutes*
+    Clip: {fileID: 0}
+  - ID: 9
+    Speaker: 0
+    SpeakerName: Bob
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Hey there, what a great day today is! Phew, I'm beat, working hard
+      the last couple days. Good for the soul though. Lucky we have this Regular
+      Gum around, keeps me on my feet! The second dispenser's in stock again too!
+      Thank goodness that they replaced Aric, it seems like he was single-handedly
+      keeping it out of stock! Have a terrific day!
+    Clip: {fileID: 0}
+  - ID: 14
+    Speaker: 12
+    SpeakerName: BobBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
+    Clip: {fileID: 0}
+  - ID: 15
+    Speaker: 12
+    SpeakerName: BobBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
     Clip: {fileID: 0}
   Choices: []

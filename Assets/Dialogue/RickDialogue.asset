@@ -14,11 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Conversations:
   - ID: 6
-    Name: Day1
+    Name: Day0
     FirstMessage: 7
+  - ID: 9
+    Name: Day1
+    FirstMessage: 14
+  - ID: 11
+    Name: Day2
+    FirstMessage: 17
+  - ID: 12
+    Name: Day3
+    FirstMessage: 16
+  - ID: 13
+    Name: Day4
+    FirstMessage: 15
   Speakers:
   - ID: 5
     Name: Rick
+    Icon: {fileID: 0}
+  - ID: 8
+    Name: RickBot
     Icon: {fileID: 0}
   Messages:
   - ID: 7
@@ -26,8 +41,37 @@ MonoBehaviour:
     SpeakerName: Rick
     PreviousMessage: -1
     NextMessage: -1
-    MessageText: Hey there, I'm Rick, welcome to Ymazon. I know you've heard things
-      about this place, but don't worry about it. I've never met quota and nothings
-      ever happened to me.
+    MessageText: Hey there, I'm Rick, welcome to Ymazon. What am I doing? Oh I don't
+      usually start working for another couple hours, this place is super chill.
+      As far as I know no one's ever been punished for not meeting quota. Not at
+      this warehouse anyway... See ya, I'm gunna take  a nap
+    Clip: {fileID: 0}
+  - ID: 14
+    Speaker: 8
+    SpeakerName: RickBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
+    Clip: {fileID: 0}
+  - ID: 15
+    Speaker: 8
+    SpeakerName: RickBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
+    Clip: {fileID: 0}
+  - ID: 16
+    Speaker: 8
+    SpeakerName: RickBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
+    Clip: {fileID: 0}
+  - ID: 17
+    Speaker: 8
+    SpeakerName: RickBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
     Clip: {fileID: 0}
   Choices: []

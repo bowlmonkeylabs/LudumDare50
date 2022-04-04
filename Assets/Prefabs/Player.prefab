@@ -674,6 +674,13 @@ MonoBehaviour:
     InstancePath: IntermediateProperties
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 42346d53d1c71e74589141548baabeb8, type: 2}
+  HasPissBottle:
+    UseConstant: 0
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 9be04e2f86afa4946bb74161da89b89c, type: 2}
   currentPissAmount:
     UseConstant: 0
     EnableInstanceOptions: 0
@@ -709,6 +716,13 @@ MonoBehaviour:
     InstancePath: IntermediateProperties
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 02930e234e3831640881d99b9f024e8c, type: 2}
+  maxPissBottleMult:
+    UseConstant: 1
+    EnableInstanceOptions: 0
+    InstanceName: 
+    InstancePath: IntermediateProperties
+    ConstantValue: 2
+    Variable: {fileID: 0}
   caffeineTimer:
     UseConstant: 0
     ConstantDuration: 0
@@ -728,6 +742,7 @@ MonoBehaviour:
   onContinueDialogue: {fileID: 11400000, guid: 76f080315d455e748955feecbe75e221, type: 2}
   onUnHover: {fileID: 11400000, guid: a2e46f7108331c749842a7c13e56143d, type: 2}
   HoverText: {fileID: 0}
+  onGetPissBottle: {fileID: 11400000, guid: d09d8b6676cfcd04abe36022b83f3b06, type: 2}
 --- !u!1001 &7332487764060689678
 PrefabInstance:
   m_ObjectHideFlags: 0

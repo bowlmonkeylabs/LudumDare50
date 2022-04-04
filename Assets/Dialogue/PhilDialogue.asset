@@ -12,7 +12,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc788fe28a1947c5906bf24c0472406, type: 3}
   m_Name: PhilDialogue
   m_EditorClassIdentifier: 
-  Conversations: []
-  Speakers: []
-  Messages: []
+  Conversations:
+  - ID: 6
+    Name: Day0
+    FirstMessage: 9
+  - ID: 7
+    Name: Day1
+    FirstMessage: 10
+  - ID: 8
+    Name: Day2
+    FirstMessage: 11
+  - ID: 12
+    Name: Day3
+    FirstMessage: 14
+  - ID: 13
+    Name: Day4
+    FirstMessage: 15
+  Speakers:
+  - ID: 5
+    Name: Phil
+    Icon: {fileID: 0}
+  - ID: 16
+    Name: PhilBot
+    Icon: {fileID: 0}
+  Messages:
+  - ID: 9
+    Speaker: 5
+    SpeakerName: Phil
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Psst hey dude. You're new here right? Well if you ever feel llike
+      you need an edge to meet that quota, come see me. Got plenty of premium, high
+      quality urine receptacles
+    Clip: {fileID: 0}
+  - ID: 10
+    Speaker: 5
+    SpeakerName: Phil
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Psst hey dude. Everyone's scrambling to get urine bottles to meet
+      quota, so they're selling like hotcakes. I'll always have some for my favorite
+      customer though. Waddaya say?
+    Clip: {fileID: 0}
+  - ID: 11
+    Speaker: 5
+    SpeakerName: Phil
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Psst hey dude. They closed one of the bathrooms, so my piss bottle
+      sales have been off the wall. I'm almost out, but I kept one in reserve for
+      my favorite customer. Waddaya think?
+    Clip: {fileID: 0}
+  - ID: 14
+    Speaker: 16
+    SpeakerName: PhilBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
+    Clip: {fileID: 0}
+  - ID: 15
+    Speaker: 16
+    SpeakerName: PhilBot
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Beep boop
+    Clip: {fileID: 0}
   Choices: []
