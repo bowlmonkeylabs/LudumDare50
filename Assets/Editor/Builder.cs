@@ -24,10 +24,10 @@ namespace BML.Build
             new Dictionary<BuildTarget, BuildTargetInfo> {
                 { BuildTarget.StandaloneWindows, new BuildTargetInfo(".exe") },
                 { BuildTarget.StandaloneWindows64, new BuildTargetInfo(".exe") },
+                { BuildTarget.WebGL, new BuildTargetInfo("") },
                 // TODO below this line I do not know the correct extensions
                 // { BuildTarget.StandaloneLinux64, (extension:"") },
                 // { BuildTarget.StandaloneOSX, (extension:"") },
-                // { BuildTarget.WebGL, (extension:"") },
             };
 
         #region Build methods

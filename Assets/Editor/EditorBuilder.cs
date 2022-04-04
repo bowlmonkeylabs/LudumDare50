@@ -24,5 +24,25 @@ namespace BML.Build
                 Builder.OverwriteMode.Overwrite
             );
         }
+        
+        [MenuItem("Build/Build WebGL (Development)")]
+        public static void BuildWebGlDevelopment()
+        {
+            Builder.BuildProject(
+                BuildTarget.WebGL,
+                BuildOptions.Development,
+                Builder.OverwriteMode.Overwrite
+            );
+        }
+        
+        [MenuItem("Build/Build WebGL (Release)")]
+        public static void BuildWebGlRelease()
+        {
+            Builder.BuildProject(
+                BuildTarget.WebGL,
+                BuildOptions.None,
+                Builder.OverwriteMode.Overwrite
+            );
+        }
     }
 }
