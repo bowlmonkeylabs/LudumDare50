@@ -2958,8 +2958,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxPrefab: {fileID: 3218928408899702570, guid: 75093b85864ab0a48a6ebb99ece34641, type: 3}
-  yOffset: 1
-  xOffset: 2
+  yOffset: 1.5
+  xOffset: 1.25
   moveSpeed: -1
 --- !u!114 &594995209643566885
 MonoBehaviour:

@@ -13,11 +13,12 @@ namespace BML.Scripts
 {
     public class TaskManager : MonoBehaviour
     {
+        [SerializeField] private float lowerTimePercent = .25f;
+        
         [Title("References")]
         [SerializeField] private DayTransition dayTransition; 
         
         [Title("State Vars")]
-        
         [SerializeField] private TimerReference DayTimer;
         [SerializeField] private IntReference CurrentQuota;
         [SerializeField] private IntReference BoxesDepositedCount;
@@ -39,6 +40,9 @@ namespace BML.Scripts
         [SerializeField] private GameEvent OnDepositBoxSuccess;
         [SerializeField] private GameEvent OnTalkToSupervisor;
         [SerializeField] private GameEvent OnPissYourself;
+        [SerializeField] private GameEvent OnTimerLow;
+        [SerializeField] private GameEvent OnRoundOver;
+        [SerializeField] private GameEvent OnGrabPlaceObject;
 
         [Title("Task UIs")]
         [SerializeField] private TaskPromptManager TaskPromptManager;
@@ -89,6 +93,7 @@ namespace BML.Scripts
             OnPissYourself.Subscribe(PissYourself);
             OnTalkToSupervisor.Subscribe(TalkToSupervisor);
             DayTimer.ResetTimer();
+            DayTimer.SubscribeFinished(() => OnRoundOver.Raise());
         }
 
         private void OnDisable()
@@ -113,6 +118,7 @@ namespace BML.Scripts
             CurrentQuota.Value = Mathf.FloorToInt(QuotaCurve.Value.Evaluate(CurrentDay.Value));
             QuotaText.text = QuotaTextPrefix + CurrentQuota.Value;
             BoxesDepositedCount.Value = 0;
+            isTimeLow = false;
         }
 
         private void Update()
@@ -121,6 +127,12 @@ namespace BML.Scripts
             TimeLeftText.text = TimeLeftTextPrefix + Mathf.CeilToInt(DayTimer.RemainingTime ?? 0);
             BoxesDepositedText.text = BoxesDepositedTextPrefix + BoxesDepositedCount.Value;
             PissAmountText.text = PissAmountPrefix + Mathf.Floor(CurrentPissAmount.Value);
+
+            if (!isTimeLow && DayTimer.ElapsedTime / DayTimer.Duration > lowerTimePercent)
+            {
+                OnTimerLow.Raise();
+                isTimeLow = true;
+            }
         }
 
         private void GrabBox()
@@ -130,6 +142,7 @@ namespace BML.Scripts
             CurrentTask = ProductDemandManager.GetNextProduct();
             TaskPromptManager.SetPrompt(CurrentTask);
             Debug.Log("Grabbed Box");
+            OnGrabPlaceObject.Raise();
         }
 
         private void HandleGrabProductA() => GrabProduct(Task.GrabProductA);
@@ -148,6 +161,7 @@ namespace BML.Scripts
             TaskPromptManager.SetPrompt(CurrentTask);
             
             Debug.Log("Grabbed Product");
+            OnGrabPlaceObject.Raise();
         }
 
         private void DepositBox()
@@ -159,6 +173,7 @@ namespace BML.Scripts
             BoxesDepositedCount.Value++;
             Debug.Log($"Deposited Box #{BoxesDepositedCount.Value}");
             OnDepositBoxSuccess.Raise();
+            OnGrabPlaceObject.Raise();
         }
 
         private void TimerComplete()
