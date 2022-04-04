@@ -109,7 +109,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1044002108087876267}
   - component: {fileID: 49933979275269271}
-  - component: {fileID: 7229354773247929083}
   - component: {fileID: 60411879625359689}
   m_Layer: 6
   m_Name: Interactable - CaffeineDispenser
@@ -145,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Use Caffeine Dispenser
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -161,26 +161,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7229354773247929083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4295429595450641120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: '{I} '
-    InstancePath: IntermediateProperties
-    ConstantValue: Use Caffeine Dispenser
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
 --- !u!136 &60411879625359689
 CapsuleCollider:
   m_ObjectHideFlags: 0

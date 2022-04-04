@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverText: 
+  hoverText: Grab Box
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -4514,6 +4514,10 @@ PrefabInstance:
     - target: {fileID: 3607330631449869089, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_Name
       value: Supervisor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607330631449869089, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}

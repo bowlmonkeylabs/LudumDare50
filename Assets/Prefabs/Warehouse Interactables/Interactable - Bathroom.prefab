@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2035791163079307996}
   - component: {fileID: 1336717606115220704}
-  - component: {fileID: 8533842976711451276}
   - component: {fileID: 1363253048589551934}
   m_Layer: 6
   m_Name: Interactable - Bathroom
@@ -47,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Use Bathroom
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -63,26 +63,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8533842976711451276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2999944158877549207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afdd2906706ff4e439874ec38e7f0696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverText:
-    UseConstant: 1
-    EnableInstanceOptions: 0
-    InstanceName: '{I} '
-    InstancePath: IntermediateProperties
-    ConstantValue: Use Bathroom
-    Variable: {fileID: 0}
-  OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
 --- !u!136 &1363253048589551934
 CapsuleCollider:
   m_ObjectHideFlags: 0
