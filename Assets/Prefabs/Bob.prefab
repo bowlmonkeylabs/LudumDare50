@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnStartConversation: {fileID: 11400000, guid: e1532a5f81f3fff46a1d819dedc145e1, type: 2}
-  Dialogue: {fileID: 11400000, guid: 293f79f20790e1341b1bd28a52b0f18c, type: 2}
+  Dialogue: {fileID: 11400000, guid: 06af85f713795c24b9c1bdf50bc78e5e, type: 2}
   ConversationName: Day
   CurrentDay:
     UseConstant: 0
