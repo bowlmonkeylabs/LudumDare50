@@ -5955,6 +5955,10 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7319123996114424211, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
+    - target: {fileID: 7540178851133172153, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.17
+      objectReference: {fileID: 0}
     - target: {fileID: 8157100771598365350, guid: 18fa5ac9af170944f8836039c046b6b9, type: 3}
       propertyPath: m_Name
       value: Interactable - Bathroom (2)_OUTOFORDER
