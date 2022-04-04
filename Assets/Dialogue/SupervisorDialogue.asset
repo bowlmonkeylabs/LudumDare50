@@ -50,7 +50,10 @@ MonoBehaviour:
     SpeakerName: Supervisor
     PreviousMessage: -1
     NextMessage: -1
-    MessageText: 'Welcome to Ymazon. Your quota for the day is: {{current_quota}}'
+    MessageText: 'Welcome to Ymazon. Your quota for the day is: {{current_quota}}
+
+      Get
+      to work before time is up. And don''t piss yourself.'
     Clip: {fileID: 0}
   - ID: 9
     Speaker: 6
@@ -66,7 +69,8 @@ MonoBehaviour:
     NextMessage: -1
     MessageText: 'Your quota for the day is: {{current_quota}}
 
-      Get to work.'
+      Get to work
+      before time is up. And don''t piss yourself.'
     Clip: {fileID: 0}
   - ID: 19
     Speaker: 6
@@ -89,7 +93,8 @@ MonoBehaviour:
     NextMessage: -1
     MessageText: 'Your quota for the day is: {{current_quota}}
 
-      Get to work.'
+      Get to work
+      before time is up. And don''t piss yourself.'
     Clip: {fileID: 0}
   - ID: 22
     Speaker: 6
@@ -98,7 +103,8 @@ MonoBehaviour:
     NextMessage: -1
     MessageText: 'Your quota for the day is: {{current_quota}}
 
-      Get to work.'
+      Get to work
+      before time is up. And don''t piss yourself.'
     Clip: {fileID: 0}
   - ID: 23
     Speaker: 6
@@ -112,6 +118,8 @@ MonoBehaviour:
     SpeakerName: Supervisor
     PreviousMessage: -1
     NextMessage: -1
-    MessageText: Your human slowness has become too much. You have been replaced.
+    MessageText: Based on your quota history, we have decided your human slowness
+      has become too much. We took the liberty of enhancing you just like the rest
+      of us.
     Clip: {fileID: 0}
   Choices: []

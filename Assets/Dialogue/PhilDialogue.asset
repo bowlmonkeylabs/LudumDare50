@@ -40,16 +40,17 @@ MonoBehaviour:
     Speaker: 5
     SpeakerName: Phil
     PreviousMessage: -1
-    NextMessage: -1
+    NextMessage: 17
     MessageText: Psst hey dude. You're new here right? Well if you ever feel llike
       you need an edge to meet that quota, come see me. Got plenty of premium, high
-      quality urine receptacles.
+      quality urine receptacles. With these, I can go way longer without using the
+      bathroom.
     Clip: {fileID: 0}
   - ID: 10
     Speaker: 5
     SpeakerName: Phil
     PreviousMessage: -1
-    NextMessage: -1
+    NextMessage: 19
     MessageText: Psst hey dude. Everyone's scrambling to get urine bottles to meet
       quota, so they're selling like hotcakes. I'll always have some for my favorite
       customer though. Waddaya say?
@@ -58,7 +59,7 @@ MonoBehaviour:
     Speaker: 5
     SpeakerName: Phil
     PreviousMessage: -1
-    NextMessage: -1
+    NextMessage: 20
     MessageText: Psst hey dude. They closed one of the bathrooms, so my piss bottle
       sales have been off the wall. I'm almost out, but I kept one in reserve for
       my favorite customer. Waddaya think?
@@ -76,5 +77,26 @@ MonoBehaviour:
     PreviousMessage: -1
     NextMessage: -1
     MessageText: Beep boop
+    Clip: {fileID: 0}
+  - ID: 17
+    Speaker: 5
+    SpeakerName: Phil
+    PreviousMessage: 9
+    NextMessage: -1
+    MessageText: '*** You got a Piss Bottle for the day ***'
+    Clip: {fileID: 0}
+  - ID: 19
+    Speaker: 5
+    SpeakerName: Phil
+    PreviousMessage: 10
+    NextMessage: -1
+    MessageText: '*** You got a Piss Bottle for the day ***'
+    Clip: {fileID: 0}
+  - ID: 20
+    Speaker: 5
+    SpeakerName: Phil
+    PreviousMessage: 11
+    NextMessage: -1
+    MessageText: '*** You got a Piss Bottle for the day ***'
     Clip: {fileID: 0}
   Choices: []
