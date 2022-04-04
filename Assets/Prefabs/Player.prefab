@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 9018249871969862650, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: m_CustomBlends
+      value: 
+      objectReference: {fileID: 11400000, guid: 9d6c978a3090686429606259c9551941, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
 --- !u!4 &8990894633311890267 stripped
@@ -741,8 +745,8 @@ MonoBehaviour:
   onConsumeCaffeine: {fileID: 11400000, guid: 1a31693f858c73249b1cf3e6a11699cc, type: 2}
   onContinueDialogue: {fileID: 11400000, guid: 76f080315d455e748955feecbe75e221, type: 2}
   onUnHover: {fileID: 11400000, guid: a2e46f7108331c749842a7c13e56143d, type: 2}
-  HoverText: {fileID: 0}
   onGetPissBottle: {fileID: 11400000, guid: d09d8b6676cfcd04abe36022b83f3b06, type: 2}
+  HoverText: {fileID: 0}
 --- !u!1001 &7332487764060689678
 PrefabInstance:
   m_ObjectHideFlags: 0

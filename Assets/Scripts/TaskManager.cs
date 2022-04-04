@@ -43,6 +43,7 @@ namespace BML.Scripts
         [SerializeField] private GameEvent OnTimerLow;
         [SerializeField] private GameEvent OnRoundOver;
         [SerializeField] private GameEvent OnGrabPlaceObject;
+        [SerializeField] private GameEvent OnGameOver;
 
         [Title("Task UIs")]
         [SerializeField] private TaskPromptManager TaskPromptManager;
@@ -193,6 +194,13 @@ namespace BML.Scripts
         {
             if (CurrentTask == Task.TalkToSupervisorStartGame)
             {
+                //Start end game if last day
+                if (CurrentDay.Value >= 4)
+                {
+                    OnGameOver.Raise();
+                    return;
+                }
+                
                 //TODO: tell player what quota for the day is
                 //set task
                 //start timer

@@ -21,7 +21,7 @@ namespace DefaultNamespace
         
         private void Update()
         {
-            Vector3 dirToCam = (Camera.main.transform.position - transform.position).normalized;
+            Vector3 dirToCam = (MainCamera.transform.position - transform.position).normalized;
             transform.rotation = Quaternion.LookRotation(dirToCam);
             var lookAtOffset = Vector3.Scale(MainCamera.transform.rotation * OffsetDirection, AxisMask);
             transform.LookAt(transform.position + lookAtOffset, MainCamera.transform.rotation * Up);
