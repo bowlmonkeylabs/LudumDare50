@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 16663773}
   - component: {fileID: 16663772}
   - component: {fileID: 16663771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 85960414}
   - component: {fileID: 85960413}
   - component: {fileID: 85960412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 360570019}
   - component: {fileID: 360570018}
   - component: {fileID: 360570017}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 399236036}
   - component: {fileID: 399236035}
   - component: {fileID: 399236034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 427076297}
   - component: {fileID: 427076296}
   - component: {fileID: 427076295}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 469677060}
   - component: {fileID: 469677059}
   - component: {fileID: 469677058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 490890412}
   - component: {fileID: 490890411}
   - component: {fileID: 490890410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 801070675}
   - component: {fileID: 801070674}
   - component: {fileID: 801070673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -772,7 +772,7 @@ GameObject:
   - component: {fileID: 1023655340}
   - component: {fileID: 1023655339}
   - component: {fileID: 1023655338}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -867,7 +867,7 @@ GameObject:
   - component: {fileID: 1580668297}
   - component: {fileID: 1580668296}
   - component: {fileID: 1580668295}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 1697876079}
   - component: {fileID: 1697876078}
   - component: {fileID: 1697876077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1057,7 +1057,7 @@ GameObject:
   - component: {fileID: 3219400080941193227}
   - component: {fileID: 3219400080861996797}
   - component: {fileID: 3219400080861996800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box Supply - Grab Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1101,6 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: 
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -1134,7 +1135,7 @@ MonoBehaviour:
     EnableInstanceOptions: 0
     InstanceName: '{I} '
     InstancePath: IntermediateProperties
-    ConstantValue: Box Supply
+    ConstantValue: Grab Box
     Variable: {fileID: 0}
   OnShowHoverText: {fileID: 11400000, guid: 3ee74fc8d6b7c7f4488a241d1f8766b2, type: 2}
 --- !u!65 &3219400080861996800
@@ -1165,7 +1166,7 @@ GameObject:
   - component: {fileID: 3219400080947337888}
   - component: {fileID: 3219400080947337900}
   - component: {fileID: 3219400080861996796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shelf_Product A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1477,6 +1478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Grab Red Product
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -1528,7 +1530,7 @@ GameObject:
   - component: {fileID: 3219400080993966417}
   - component: {fileID: 3219400080993966416}
   - component: {fileID: 3219400080861996792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shelf_Product E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1840,6 +1842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Grab Yellow Product
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -1891,7 +1894,7 @@ GameObject:
   - component: {fileID: 3219400081320543130}
   - component: {fileID: 3219400081320543078}
   - component: {fileID: 3219400080861996783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Conveyor Belt - Deposit Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2203,6 +2206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Deposit Box
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -2297,7 +2301,7 @@ GameObject:
   - component: {fileID: 3219400081456380170}
   - component: {fileID: 3219400081456380169}
   - component: {fileID: 3219400080861996793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shelf_Product D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2609,6 +2613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Grab Purple Product
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -2865,7 +2870,7 @@ GameObject:
   - component: {fileID: 3219400081656875875}
   - component: {fileID: 3219400081656875874}
   - component: {fileID: 3219400080861996794}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shelf_Product C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3177,6 +3182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Grab Green Product
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -3228,7 +3234,7 @@ GameObject:
   - component: {fileID: 3219400081657508452}
   - component: {fileID: 3219400081657508507}
   - component: {fileID: 3219400080861996784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shelf_Product F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3540,6 +3546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Grab Cyan Product
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -3623,7 +3630,7 @@ GameObject:
   - component: {fileID: 3219400082585229981}
   - component: {fileID: 3219400082585229980}
   - component: {fileID: 3219400080861996795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shelf_Product B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3935,6 +3942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Grab Blue Product
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -4465,11 +4473,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24
+      value: 23.13
       objectReference: {fileID: 0}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 1.43
       objectReference: {fileID: 0}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4477,7 +4485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4485,7 +4493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4497,7 +4505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 3607330631449869088, guid: 5fb813608a2d6824a94a2e7f23cb1006, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

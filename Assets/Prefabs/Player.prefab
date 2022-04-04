@@ -719,7 +719,7 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: ef1d515a2d724494d9419d52cc0f2e5b, type: 2}
   interactMask:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 64
   mainCamera: {fileID: 8990894633311890267}
   interactDistance: 10
   hoverDistance: 1
@@ -727,6 +727,7 @@ MonoBehaviour:
   onConsumeCaffeine: {fileID: 11400000, guid: 1a31693f858c73249b1cf3e6a11699cc, type: 2}
   onContinueDialogue: {fileID: 11400000, guid: 76f080315d455e748955feecbe75e221, type: 2}
   onUnHover: {fileID: 11400000, guid: a2e46f7108331c749842a7c13e56143d, type: 2}
+  HoverText: {fileID: 0}
 --- !u!1001 &7332487764060689678
 PrefabInstance:
   m_ObjectHideFlags: 0

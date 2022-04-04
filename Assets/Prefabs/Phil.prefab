@@ -705,6 +705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Talk To Phil
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -780,7 +781,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5562536740885602723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.053, z: 0}
+  m_LocalPosition: {x: 0, y: 0.052999973, z: 0}
   m_LocalScale: {x: 0.29521, y: 0.29521, z: 0.29521}
   m_Children: []
   m_Father: {fileID: 3607330631449869088}

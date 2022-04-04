@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc397295eb4485abacbd7bcc808ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverText: Talk To Bob
   OnInteract:
     m_PersistentCalls:
       m_Calls:

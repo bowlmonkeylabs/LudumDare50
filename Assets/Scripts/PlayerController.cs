@@ -29,6 +29,7 @@ namespace BML.Scripts
         [SerializeField] private GameEvent onConsumeCaffeine;
         [SerializeField] private GameEvent onContinueDialogue;
         [SerializeField] private GameEvent onUnHover;
+        [SerializeField] private TMP_Text HoverText;
 
         private bool havePissedYourself;
         private bool isCaffeinated;
@@ -51,7 +52,7 @@ namespace BML.Scripts
 
         private void Update()
         {
-            // CheckHover();
+            HandleHover();
             caffeineTimer.UpdateTime();
 
             if (isRoundStarted.Value && !DayTimer.IsFinished)
@@ -87,6 +88,22 @@ namespace BML.Scripts
                 if (interactionReceiver == null) return;
 
                 interactionReceiver.ReceiveInteraction();
+            }
+        }
+
+        private void HandleHover()
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, interactDistance, interactMask))
+            {
+                InteractionReceiver interactionReceiver = hit.collider.GetComponent<InteractionReceiver>();
+                if (interactionReceiver == null) return;
+
+                HoverText.text = interactionReceiver.HoverText;
+            }
+            else
+            {
+                HoverText.text = "";
             }
         }
 
