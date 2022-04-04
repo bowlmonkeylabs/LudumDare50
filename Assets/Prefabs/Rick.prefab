@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 206908199}
   - component: {fileID: 206908198}
   - component: {fileID: 206908197}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ChangeSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 1798949989569099681}
   - component: {fileID: 3459042697485280731}
   - component: {fileID: 1172885530804661741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rick_Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 3607330631449869091}
   - component: {fileID: 3607330631449869100}
   - component: {fileID: 3607330630417636078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 2576308757503127638}
   - component: {fileID: 6555579010146783655}
   - component: {fileID: 6213162981139272509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rick
   m_TagString: Untagged
   m_Icon: {fileID: 0}

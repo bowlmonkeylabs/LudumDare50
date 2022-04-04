@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3270293254243686930}
   - component: {fileID: 4706136037122364036}
   - component: {fileID: 4990216463804820377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 3607330631449869091}
   - component: {fileID: 3607330631449869100}
   - component: {fileID: 3607330630417636078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 1747324020923350849}
   - component: {fileID: 4181287237617762304}
   - component: {fileID: 3684286509343365277}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ChangeSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 5364665710548112264}
   - component: {fileID: 8193439948148576838}
   - component: {fileID: 3679807344127704356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bob_Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

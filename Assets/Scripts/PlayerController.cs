@@ -85,7 +85,7 @@ namespace BML.Scripts
             }
 
             RaycastHit hit;
-            if (Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, interactDistance, interactMask))
+            if (Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, interactDistance, interactMask, QueryTriggerInteraction.Collide))
             {
                 //Debug.Log($"Hit {hit.collider.gameObject.name}");
 
@@ -99,7 +99,7 @@ namespace BML.Scripts
         private void HandleHover()
         {
             RaycastHit hit;
-            if (Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, interactDistance, interactMask))
+            if (Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, interactDistance, interactMask, QueryTriggerInteraction.Collide))
             {
                 InteractionReceiver interactionReceiver = hit.collider.GetComponent<InteractionReceiver>();
                 if (interactionReceiver == null) return;

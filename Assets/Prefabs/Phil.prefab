@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7144125889493633880}
   - component: {fileID: 3609052265808780354}
   - component: {fileID: 5253698074214733920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Phil_Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 4895226374340110546}
   - component: {fileID: 5718701794830169536}
   - component: {fileID: 8671750739262321787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ChangeSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +607,8 @@ GameObject:
   - component: {fileID: 3607330631449869091}
   - component: {fileID: 3607330631449869100}
   - component: {fileID: 3607330630417636078}
-  m_Layer: 0
+  - component: {fileID: 8796791396884123629}
+  m_Layer: 6
   m_Name: Phil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,7 +755,216 @@ MonoBehaviour:
   AppendRoundStarted: 0
   OnDialogueFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8796791396884123629}
+        m_TargetAssemblyTypeName: BML.VisualStateMachine.Scripts.Events.ConditionalEvent,
+          StateMachine
+        m_MethodName: TryRaise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8796791396884123629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3607330631449869089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d9de05a2e70424e8718c7cf216b134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 87ab714844c4fba4fb305623e949d41b, type: 2}
+    - {fileID: 11400000, guid: 8eebe1ad687288b4491564bbe89d53dd, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: BoolConditions
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.BoolCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: FloatConditions
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.FloatCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IntConditions
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.IntCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 3|BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.IntCondition,
+        StateMachine
+    - Name: targetParameter
+      Entry: 7
+      Data: 4|BML.ScriptableObjectCore.Scripts.Variables.IntReference, ScriptableObjectSystem
+    - Name: UseConstant
+      Entry: 5
+      Data: false
+    - Name: EnableInstanceOptions
+      Entry: 5
+      Data: false
+    - Name: InstanceName
+      Entry: 6
+      Data: 
+    - Name: InstancePath
+      Entry: 1
+      Data: IntermediateProperties
+    - Name: ConstantValue
+      Entry: 3
+      Data: 0
+    - Name: Variable
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: comparator
+      Entry: 3
+      Data: 0
+    - Name: value
+      Entry: 7
+      Data: 5|BML.ScriptableObjectCore.Scripts.Variables.ValueReferences.FloatValueReference,
+        ScriptableObjectSystem
+    - Name: UseConstant
+      Entry: 5
+      Data: false
+    - Name: EnableInstanceOptions
+      Entry: 5
+      Data: false
+    - Name: InstanceName
+      Entry: 1
+      Data: '{I} '
+    - Name: InstancePath
+      Entry: 1
+      Data: IntermediateProperties
+    - Name: InstanceType
+      Entry: 6
+      Data: 
+    - Name: ConstantValue
+      Entry: 4
+      Data: 0
+    - Name: ReferenceValue
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Vector2Conditions
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.Vector2Condition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Vector3Conditions
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.Vector3Condition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: GameEventConditions
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.GameEventCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DynamicGameEventConditions
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[BML.VisualStateMachine.Scripts.Nodes.TransitionConditions.DynamicGameEventCondition,
+        StateMachine]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  StateMachines: []
+  ValidStates: []
+  InvalidStates: []
+  TimerConditions: []
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: d09d8b6676cfcd04abe36022b83f3b06, type: 2}
+        m_TargetAssemblyTypeName: BML.ScriptableObjectCore.Scripts.Events.GameEvent,
+          ScriptableObjectSystem
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5562536740885602723
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +976,7 @@ GameObject:
   - component: {fileID: 5183875757741400612}
   - component: {fileID: 1642975458216388794}
   - component: {fileID: 5649208480371085670}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Phil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -854,17 +1064,3 @@ MonoBehaviour:
   OffsetDirection: {x: 0, y: 0, z: -1}
   Up: {x: 0, y: 1, z: 0}
   AxisMask: {x: 1, y: 0, z: 1}
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: d09d8b6676cfcd04abe36022b83f3b06, type: 2}
-        m_TargetAssemblyTypeName: BML.ScriptableObjectCore.Scripts.Events.GameEvent,
-          ScriptableObjectSystem
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
