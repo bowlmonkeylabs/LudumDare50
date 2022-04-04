@@ -342,13 +342,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5534281762224616702}
   - component: {fileID: 4662308320823291058}
+  - component: {fileID: 6039667648919252631}
   m_Layer: 0
   m_Name: OutOfOrder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5534281762224616702
 Transform:
   m_ObjectHideFlags: 0
@@ -402,7 +403,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f7b1087b6d5b7474681205cd2dd9ad8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -414,6 +415,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6039667648919252631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110251635462935241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d7875d94844f109b9fba4a9f731aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GrabMainCameraOnStart: 1
+  OffsetDirection: {x: 0, y: 0, z: 1}
+  Up: {x: 0, y: 1, z: 0}
+  AxisMask: {x: 1, y: 0, z: 1}
 --- !u!1 &6472119023026123951
 GameObject:
   m_ObjectHideFlags: 0
