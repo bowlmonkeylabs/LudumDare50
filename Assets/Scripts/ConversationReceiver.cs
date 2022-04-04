@@ -3,6 +3,7 @@ using BML.ScriptableObjectCore.Scripts.Events;
 using BML.ScriptableObjectCore.Scripts.Variables;
 using QuantumTek.QuantumDialogue;
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -25,17 +26,24 @@ namespace BML.Scripts
         [SerializeField] private GameEvent OnPissedSelf;
         [ShowInInspector] private bool HasPissedSelf = false;
 
+        private void SetHasPissedSelf()
+        {
+            HasPissedSelf = true;
+        }
+
         private UnityEvent currentOnFinishDialogueEvent;
         public void OnEnable()
         {
             OnStartConversation.Subscribe(ReceiveConversation);
             OnContinueDialogue.Subscribe(AttemptContinueDialogue);
+            if (OnPissedSelf != null && !OnPissedSelf.SafeIsUnityNull()) OnPissedSelf.Subscribe(SetHasPissedSelf);
         }
 
         public void OnDisable()
         {
             OnStartConversation.Unsubscribe(ReceiveConversation);
             OnContinueDialogue.Unsubscribe(AttemptContinueDialogue);
+            if (OnPissedSelf != null && !OnPissedSelf.SafeIsUnityNull()) OnPissedSelf.Unsubscribe(SetHasPissedSelf);
         }
 
         private void ReceiveConversation(System.Object prevDialogueInfo, System.Object nextDialogueInfo)

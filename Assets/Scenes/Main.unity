@@ -2296,6 +2296,7 @@ MonoBehaviour:
     InstancePath: IntermediateProperties
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 9befd861aa7713141938a110d03fa947, type: 2}
+  OnPissedSelf: {fileID: 11400000, guid: c1b2c344986a56e479e5216fb4254828, type: 2}
 --- !u!114 &769153026
 MonoBehaviour:
   m_ObjectHideFlags: 0
