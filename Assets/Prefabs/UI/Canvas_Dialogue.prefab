@@ -423,12 +423,12 @@ MonoBehaviour:
   onCharacterVisible:
     m_PersistentCalls:
       m_Calls: []
-  waitForNormalChars: 0.027027028
-  waitLong: 0.6
-  waitMiddle: 0.2
+  waitForNormalChars: 0.016666668
+  waitLong: 0.033333335
+  waitMiddle: 0.022222223
   avoidMultiplePunctuactionWait: 0
   waitForNewLines: 1
-  waitForLastCharacter: 1
+  waitForLastCharacter: 0
   useTypewriterWaitForDisappearances: 1
   disappearanceWaitTime: 0.015
   disappearanceSpeedMultiplier: 1
@@ -544,10 +544,10 @@ RectTransform:
   m_Father: {fileID: 8064735072797766738}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 600, y: -300}
-  m_SizeDelta: {x: 1200, y: 400}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9183511715751219394
 CanvasRenderer:
