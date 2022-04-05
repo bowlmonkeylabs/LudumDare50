@@ -17,9 +17,25 @@ namespace BML.Scripts.UI
         [SerializeField] private Slider slider;
         [SerializeField] private FloatVariable outValue;
 
+        private void Awake()
+        {
+            outValue.Subscribe(UpdateSlider);
+            UpdateSlider();
+        }
+        
+        private void OnDestroy()
+        {
+            outValue.Unsubscribe(UpdateSlider);
+        }
+
         public void ReadValue()
         {
             outValue.Value = slider.value;
+        }
+
+        public void UpdateSlider()
+        {
+            slider.value = outValue.Value;
         }
     }
 }
