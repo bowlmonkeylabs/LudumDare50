@@ -2,7 +2,7 @@
 
 ![Aricboxs.gif](https://static.jam.vg/raw/ecb/32/z/4c1f9.gif)
 
-## Do you have what it takes to keep up with demand? [Play on Itch.io](https://bowlmonkeylabs.itch.io/ludum-dare-50)
+## Do you have what it takes to keep up with demand? [Vote on Ludum Dare](https://ldjam.com/events/ludum-dare/50/quota-qrunch) or [Play on Itch.io](https://bowlmonkeylabs.itch.io/ludum-dare-50)
 
 Grab. Package. Deposit. Three words that every employee here lives by. You've taken this new job thinking you are up to the task, but are you sufficiently dedicated to the company?  Remember, a good worker always meets their quota... no matter the cost.
 
