@@ -16,7 +16,7 @@ namespace BML.Scripts
         [SerializeField] private BoolReference IsHoverTextOpen;
         [SerializeField] private BoolReference IsDayTransitioning;
         [SerializeField] private BoolReference HasPissBottle;
-        [SerializeField] private BoolReference  IsCaffeinated;
+        [SerializeField] private BoolReference IsCaffeinated;
         [SerializeField] private FloatReference currentPissAmount;
         [SerializeField] private FloatReference maxPissAmount;
         [SerializeField] private FloatReference rateOfPissPerSecond;
@@ -38,7 +38,7 @@ namespace BML.Scripts
         [SerializeField] private TMP_Text HoverText;
 
         private bool havePissedYourself;
-        
+
         private float originalMoveSpeed;
         private bool isPissHigh;
 
@@ -51,6 +51,7 @@ namespace BML.Scripts
             IsCaffeinated.Value = false;
             onGetPissBottle.Subscribe(OnGetPissBottle);
             maxPissAmount.Reset();
+            HasPissBottle.Value = false;
         }
 
         private void OnDisable()
@@ -93,7 +94,7 @@ namespace BML.Scripts
         public void OnInteract()
         {
             if (IsDayTransitioning.Value) return;
-            
+
             //Continue dialogue if currently in conversation
             if (IsConversationActive.Value)
             {
