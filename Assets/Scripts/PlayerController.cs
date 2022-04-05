@@ -19,6 +19,7 @@ namespace BML.Scripts
         [SerializeField] private BoolReference HasPissBottle;
         [SerializeField] private BoolReference IsCaffeinated;
         [SerializeField] private FloatReference currentPissAmount;
+        [SerializeField] private FloatReference startingPissAmount;
         [SerializeField] private FloatReference maxPissAmount;
         [SerializeField] private FloatReference rateOfPissPerSecond;
         [SerializeField] private FloatReference caffeineSpeedMult;
@@ -175,7 +176,7 @@ namespace BML.Scripts
         private void OnGetPissBottle()
         {
             HasPissBottle.Value = true;
-            maxPissAmount.Value *= maxPissBottleMult.Value;
+            maxPissAmount.Value = startingPissAmount.Value * maxPissBottleMult.Value;
         }
     }
 }
