@@ -4,6 +4,7 @@ using BML.ScriptableObjectCore.Scripts.Variables;
 using StarterAssets;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace BML.Scripts
 {
@@ -50,8 +51,12 @@ namespace BML.Scripts
             currentPissAmount.Value = 0f;
             IsCaffeinated.Value = false;
             onGetPissBottle.Subscribe(OnGetPissBottle);
-            maxPissAmount.Reset();
-            HasPissBottle.Value = false;
+
+            if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("BreakRoom")) 
+            {
+                maxPissAmount.Reset();
+                HasPissBottle.Value = false;
+            }
         }
 
         private void OnDisable()
