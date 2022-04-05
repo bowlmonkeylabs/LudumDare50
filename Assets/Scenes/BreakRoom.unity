@@ -2653,10 +2653,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_HoverText
       objectReference: {fileID: 0}
-    - target: {fileID: 7744137582997680447, guid: 87ceebceaf39e6047bdec00ad4ae3d82, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87ceebceaf39e6047bdec00ad4ae3d82, type: 3}
 --- !u!224 &7744137581452253573 stripped
